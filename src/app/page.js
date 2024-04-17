@@ -23,12 +23,12 @@ export default function Home() {
   }, []);
 
   return (
-    <Grid container spacing={0}>
+    <Grid container spacing={0} >
       <Grid item xs={25}>
         <Carousel />
       </Grid>
       <Grid item xs={12} style={{
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#fff',
         padding: '50px 10px 50px 10px',
         textAlign: 'center',
       }}>
@@ -68,15 +68,127 @@ export default function Home() {
         </div>
       </Grid>
       <Grid item xs={12} style={{
+        backgroundColor: '#f9f9f9',
+        padding: '50px 0',
+        textAlign: 'center',
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          <h2 style={{
+            color: '#757575',
+            fontSize: '2.5rem',
+            marginBottom: '40px',
+            textAlign: 'center',
+            '@media (max-width: 600px)': { fontSize: '2rem' },
+
+          }}>
+            Tipos de Sites que Criamos
+          </h2>
+          <Grid container spacing={3} justifyContent="center">
+            <Grid item xs={12} sm={4}>
+              <h3 style={{
+                color: '#f57c00',
+                fontSize: '2rem',
+                marginBottom: '15px',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1.5rem' }
+              }}>
+                Sites Corporativos
+              </h3>
+              <p style={{
+                color: '#666',
+                fontSize: '1.2rem',
+                lineHeight: '1.6',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1rem' }
+              }}>
+                Destaque a sua marca e alcance um público global com um site corporativo profissional.
+              </p>
+              <div style={{
+                width: '100%',
+                height: 'auto',
+                marginTop: '20px'
+              }}>
+                <Image src={image1} alt="Sites Corporativos" style={{
+                  maxWidth: '100%',
+                  height: 'auto'
+                }} />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <h3 style={{
+                color: '#f57c00',
+                fontSize: '2rem',
+                marginBottom: '15px',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1.5rem' }
+              }}>
+                Lojas Online
+              </h3>
+              <p style={{
+                color: '#666',
+                fontSize: '1.2rem',
+                lineHeight: '1.6',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1rem' }
+              }}>
+                Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
+              </p>
+              <div style={{
+                width: '100%',
+                height: 'auto',
+                marginTop: '20px'
+              }}>
+                <Image src={image2} alt="Lojas Online" style={{
+                  width: '100%',
+                  height: 'auto'
+                }} />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <h3 style={{
+                color: '#f57c00',
+                fontSize: '2rem',
+                marginBottom: '15px',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1.5rem' }
+              }}>
+                Portfólios de Arte
+              </h3>
+              <p style={{
+                color: '#666',
+                fontSize: '1.2rem',
+                lineHeight: '1.6',
+                textAlign: 'center',
+                '@media (max-width: 600px)': { fontSize: '1rem' }
+              }}>
+                Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
+              </p>
+              <div style={{
+                maxWidth: '100%',
+                height: 'auto',
+                marginTop: '20px'
+              }}>
+                <Image src={image3} alt="Portfólios de Arte" style={{
+                  width: '100%',
+                  height: 'auto'
+                }} />
+              </div>
+            </Grid>
+          </Grid>
+        </div>
+      </Grid>
+      <Grid item xs={12} style={{
         backgroundColor: '#fff',
         padding: '50px 0',
         textAlign: 'center'
       }}>
-        <div
-          style={{
-            maxWidth: '1200px',
-            margin: '0 auto'
-          }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
           <h2 style={{
             color: '#757575',
             fontSize: '2.5rem',
@@ -147,118 +259,7 @@ export default function Home() {
                 Estamos sempre aqui para ajudar! Oferecemos suporte contínuo após o lançamento do site, garantindo que você esteja sempre satisfeito com nosso serviço.
               </p>
             </Grid>
-      <Grid item xs={12} style={{
-        backgroundColor: '#f9f9f9',
-        padding: '50px 0',
-        textAlign: 'center'
-      }}>
-        <div style={{
-          maxWidth: '1200px',
-          margin: '0 auto'
-        }}>
-          <h2 style={{
-            color: '#757575',
-            fontSize: '2.5rem',
-            marginBottom: '40px',
-            textAlign: 'center',
-            '@media (max-width: 600px)': { fontSize: '2rem' }
-          }}>
-            Tipos de Sites que Criamos
-          </h2>
-          <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={12} sm={4}>
-              <h3 style={{
-                color: '#f57c00',
-                fontSize: '2rem',
-                marginBottom: '15px',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1.5rem' }
-              }}>
-                Sites Corporativos
-              </h3>
-              <p style={{
-                color: '#666',
-                fontSize: '1.2rem',
-                lineHeight: '1.6',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1rem' }
-              }}>
-                Destaque a sua marca e alcance um público global com um site corporativo profissional.
-              </p>
-              <div style={{
-                maxWidth: '100%',
-                height: 'auto',
-                marginTop: '20px'
-              }}>
-                <Image src={image1} alt="Sites Corporativos" style={{
-                  maxWidth: '100%',
-                  height: 'auto'
-                }} />
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <h3 style={{
-                color: '#f57c00',
-                fontSize: '2rem',
-                marginBottom: '15px',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1.5rem' }
-              }}>
-                Lojas Online
-              </h3>
-              <p style={{
-                color: '#666',
-                fontSize: '1.2rem',
-                lineHeight: '1.6',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1rem' }
-              }}>
-                Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
-              </p>
-              <div style={{
-                maxWidth: '100%',
-                height: 'auto',
-                marginTop: '20px'
-              }}>
-                <Image src={image2} alt="Lojas Online" style={{
-                  maxWidth: '100%',
-                  height: 'auto'
-                }} />
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <h3 style={{
-                color: '#f57c00',
-                fontSize: '2rem',
-                marginBottom: '15px',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1.5rem' }
-              }}>
-                Portfólios de Arte
-              </h3>
-              <p style={{
-                color: '#666',
-                fontSize: '1.2rem',
-                lineHeight: '1.6',
-                textAlign: 'center',
-                '@media (max-width: 600px)': { fontSize: '1rem' }
-              }}>
-                Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
-              </p>
-              <div style={{
-                maxWidth: '100%',
-                height: 'auto',
-                marginTop: '20px'
-              }}>
-                <Image src={image3} alt="Portfólios de Arte" style={{
-                  maxWidth: '100%',
-                  height: 'auto'
-                }} />
-              </div>
-            </Grid>
-          </Grid>
-        </div>
-      </Grid>
+
           </Grid>
         </div>
       </Grid>
