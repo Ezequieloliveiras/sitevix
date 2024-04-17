@@ -56,7 +56,7 @@ export default function Home() {
           <button style={{
             padding: '15px 30px',
             fontSize: isSmallScreen ? '1.2rem' : '1.5rem',
-            backgroundColor: '#007bff',
+            backgroundColor: '#f57c00',
             color: '#fff',
             border: 'none',
             borderRadius: '5px',
@@ -89,7 +89,7 @@ export default function Home() {
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={4} >
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -109,7 +109,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -129,7 +129,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -168,7 +168,7 @@ export default function Home() {
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -198,7 +198,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -228,7 +228,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#ef6c00',
+                color: '#f57c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
