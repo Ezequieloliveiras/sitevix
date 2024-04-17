@@ -3,6 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
 import Carousel from '../components/Carousel';
+import image1 from '../app/image1.jpg'
+import image2 from '../app/image2.jpg'
+import image3 from '../app/image3.jpg'
+import Image from 'next/image';
 
 export default function Home() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -189,7 +193,7 @@ export default function Home() {
                 height: 'auto',
                 marginTop: '20px'
               }}>
-                <img src="https://via.placeholder.com/500" alt="Sites Corporativos" style={{
+                <Image src={image1} alt="Sites Corporativos" style={{
                   maxWidth: '100%',
                   height: 'auto'
                 }} />
@@ -219,7 +223,7 @@ export default function Home() {
                 height: 'auto',
                 marginTop: '20px'
               }}>
-                <img src="https://via.placeholder.com/500" alt="Lojas Online" style={{
+                <Image src={image2} alt="Lojas Online" style={{
                   maxWidth: '100%',
                   height: 'auto'
                 }} />
@@ -249,7 +253,7 @@ export default function Home() {
                 height: 'auto',
                 marginTop: '20px'
               }}>
-                <img src="https://via.placeholder.com/500" alt="Portfólios de Arte" style={{
+                <Image src={image3} alt="Portfólios de Arte" style={{
                   maxWidth: '100%',
                   height: 'auto'
                 }} />
