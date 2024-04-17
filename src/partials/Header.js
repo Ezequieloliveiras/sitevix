@@ -28,7 +28,7 @@ function ResponsiveAppBar() {
     return (
         <AppBar position="static" sx={{backgroundColor:'#fff', display:'flex', justifyContent:'center'}}>
            
-                <Toolbar disableGutters  sx={{ display:'flex', justifyContent:'center', margin:'0 auto'}}>
+                <Toolbar disableGutters  sx={{ display:'flex', justifyContent:'center', margin:'0 auto',  color: '#757575'}}>
                     <Typography
                         variant="h6"
                         noWrap
