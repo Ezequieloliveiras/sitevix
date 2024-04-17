@@ -1,26 +1,18 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
-import { Grid } from '@mui/material';
-import Carousel from '../components/Carousel';
+import React, { useState, useEffect } from 'react'
+import { Grid } from '@mui/material'
+import Carousel from '../components/Carousel'
 import image1 from '../app/image1.jpg'
 import image2 from '../app/image2.jpg'
 import image3 from '../app/image3.jpg'
-import Image from 'next/image';
+import Image from 'next/image'
+
+
+
 
 export default function Home() {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
-    };
-
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+ 
 
   return (
     <Grid container spacing={0} >
@@ -37,7 +29,7 @@ export default function Home() {
           margin: '0 auto'
         }}>
           <h1 style={{
-            fontSize: isSmallScreen ? '2.5rem' : '3rem',
+            fontSize: 50,
             color: '#757575',
             marginBottom: '20px',
             textAlign: 'center',
@@ -45,7 +37,7 @@ export default function Home() {
             Tenha um site incrível para o seu negócio!
           </h1>
           <p style={{
-            fontSize: isSmallScreen ? '1rem' : '1.2rem',
+            fontSize: 20,
             color: '#666',
             lineHeight: '1.6',
             marginBottom: '30px',
@@ -55,7 +47,7 @@ export default function Home() {
           </p>
           <button style={{
             padding: '15px 30px',
-            fontSize: isSmallScreen ? '1.2rem' : '1.5rem',
+            fontSize: 20,
             backgroundColor: '#f57c00',
             color: '#fff',
             border: 'none',
@@ -90,7 +82,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -99,7 +91,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
@@ -120,7 +112,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -129,7 +121,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
@@ -150,7 +142,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -159,7 +151,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
@@ -202,7 +194,7 @@ export default function Home() {
             <Grid item xs={12} sm={4} >
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -211,7 +203,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
@@ -222,7 +214,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -231,7 +223,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
@@ -242,7 +234,7 @@ export default function Home() {
             <Grid item xs={12} sm={4}>
               <h3 style={{
                 color: '#f57c00',
-                fontSize: '2rem',
+                fontSize: 28,
                 marginBottom: '15px',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1.5rem' }
@@ -251,7 +243,7 @@ export default function Home() {
               </h3>
               <p style={{
                 color: '#666',
-                fontSize: '1.2rem',
+                fontSize: 18,
                 lineHeight: '1.6',
                 textAlign: 'center',
                 '@media (max-width: 600px)': { fontSize: '1rem' }

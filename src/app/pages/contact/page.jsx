@@ -15,15 +15,16 @@ const ContactPage = () => {
       >
         <Grid item xs={12} sm={8} md={6} lg={4}>
           <Box
-            padding={4}
+            padding={8}
             bgcolor="white"
             borderRadius={10}
             boxShadow={3}
+            
           >
             <Typography variant="h4" align="center" gutterBottom>
               Contato
             </Typography>
-            <Box bgcolor="#f9f9f9" borderRadius={10} padding={4} marginTop={2}>
+            <Box bgcolor="#f9f9f9" borderRadius={10} padding={8} marginTop={2}>
               <Typography variant="body1">
                 Para entrar em contato conosco, utilize os seguintes meios:
               </Typography>
