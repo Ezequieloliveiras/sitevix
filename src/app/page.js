@@ -1,8 +1,23 @@
-import React from 'react'
-import { Grid } from '@mui/material'
-import Carousel from '../components/Carousel'
+'use client'
+
+import React, { useState, useEffect } from 'react';
+import { Grid } from '@mui/material';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   return (
     <Grid container spacing={0}>
       <Grid item xs={12}>
@@ -18,34 +33,31 @@ export default function Home() {
           margin: '0 auto'
         }}>
           <h1 style={{
-            fontSize: '3rem',
+            fontSize: isSmallScreen ? '2.5rem' : '3rem',
             color: '#333',
             marginBottom: '20px',
             textAlign: 'center',
-            '@media (max-width: 600px)': { fontSize: '2.5rem' }
           }}>
             Tenha um site incrível para o seu negócio!
           </h1>
           <p style={{
-            fontSize: '1.2rem',
+            fontSize: isSmallScreen ? '1rem' : '1.2rem',
             color: '#666',
             lineHeight: '1.6',
             marginBottom: '30px',
             textAlign: 'center',
-            '@media (max-width: 600px)': { fontSize: '1rem' }
           }}>
             Nossa equipe especializada está pronta para criar um site que destaque sua marca, atraia mais clientes e impulsione suas vendas. Não perca tempo, dê o próximo passo para o sucesso online!
           </p>
           <button style={{
             padding: '15px 30px',
-            fontSize: '1.5rem',
+            fontSize: isSmallScreen ? '1.2rem' : '1.5rem',
             backgroundColor: '#007bff',
             color: '#fff',
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
             transition: 'background-color 0.3s ease',
-            '@media (max-width: 600px)': { fontSize: '1.2rem' }
           }}>
             Comece agora
           </button>
@@ -65,7 +77,8 @@ export default function Home() {
             color: '#333',
             fontSize: '2.5rem',
             marginBottom: '40px',
-            textAlign: 'center', '@media (max-width: 600px)': { fontSize: '2rem' }
+            textAlign: 'center',
+            '@media (max-width: 600px)': { fontSize: '2rem' }
           }}>
             Por que nos escolher?
           </h2>
