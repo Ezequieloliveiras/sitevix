@@ -28,9 +28,9 @@ function ResponsiveAppBar() {
 
 
     return (
-        <AppBar position="static">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
+        <AppBar position="static" sx={{backgroundColor:'#1a237e', display:'flex', justifyContent:'center'}}>
+           
+                <Toolbar disableGutters  sx={{ display:'flex', justifyContent:'center', margin:'0 auto'}}>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
@@ -47,8 +47,10 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                         <Typography sx={{fontWeight:'bold', fontSize:'30px'}}>SITE</Typography>
+                        <Typography sx={{fontWeight:'bold', color:'#ef6c00', fontSize:'30px'}}>VIX</Typography>
                     </Typography>
+                    
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -130,7 +132,7 @@ function ResponsiveAppBar() {
                         </Button>
                     </Box>
                 </Toolbar>
-            </Container>
+        
         </AppBar>
     );
 }

@@ -147,9 +147,6 @@ export default function Home() {
                 Estamos sempre aqui para ajudar! Oferecemos suporte contínuo após o lançamento do site, garantindo que você esteja sempre satisfeito com nosso serviço.
               </p>
             </Grid>
-          </Grid>
-        </div>
-      </Grid>
       <Grid item xs={12} style={{
         backgroundColor: '#f9f9f9',
         padding: '50px 0',
@@ -259,6 +256,9 @@ export default function Home() {
                 }} />
               </div>
             </Grid>
+          </Grid>
+        </div>
+      </Grid>
           </Grid>
         </div>
       </Grid>
