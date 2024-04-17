@@ -1,6 +1,6 @@
-import React from 'react';
-import { Grid } from '@mui/material';
-import Carousel from '../components/Carousel';
+import React from 'react'
+import { Grid } from '@mui/material'
+import Carousel from '../components/Carousel'
 
 export default function Home() {
   return (
