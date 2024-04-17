@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <Grid container spacing={0}>
-      <Grid item xs={12}>
+      <Grid item xs={25}>
         <Carousel />
       </Grid>
       <Grid item xs={12} style={{
@@ -38,7 +38,7 @@ export default function Home() {
         }}>
           <h1 style={{
             fontSize: isSmallScreen ? '2.5rem' : '3rem',
-            color: '#333',
+            color: '#757575',
             marginBottom: '20px',
             textAlign: 'center',
           }}>
@@ -78,7 +78,7 @@ export default function Home() {
             margin: '0 auto'
           }}>
           <h2 style={{
-            color: '#333',
+            color: '#757575',
             fontSize: '2.5rem',
             marginBottom: '40px',
             textAlign: 'center',
@@ -89,7 +89,7 @@ export default function Home() {
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={4} >
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -109,7 +109,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -129,7 +129,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -157,7 +157,7 @@ export default function Home() {
           margin: '0 auto'
         }}>
           <h2 style={{
-            color: '#333',
+            color: '#757575',
             fontSize: '2.5rem',
             marginBottom: '40px',
             textAlign: 'center',
@@ -168,7 +168,7 @@ export default function Home() {
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -198,7 +198,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',
@@ -228,7 +228,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <h3 style={{
-                color: '#007bff',
+                color: '#ef6c00',
                 fontSize: '2rem',
                 marginBottom: '15px',
                 textAlign: 'center',

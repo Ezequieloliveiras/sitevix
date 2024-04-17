@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
-import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import AdbIcon from '@mui/icons-material/Adb'
 
@@ -28,10 +27,9 @@ function ResponsiveAppBar() {
 
 
     return (
-        <AppBar position="static" sx={{backgroundColor:'#1a237e', display:'flex', justifyContent:'center'}}>
+        <AppBar position="static" sx={{backgroundColor:'#edf2f7', display:'flex', justifyContent:'center', color:'#757575'}}>
            
                 <Toolbar disableGutters  sx={{ display:'flex', justifyContent:'center', margin:'0 auto'}}>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -47,7 +45,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                         <Typography sx={{fontWeight:'bold', fontSize:'30px'}}>SITE</Typography>
+                         <Typography sx={{fontWeight:'bold', fontSize:'30px', color:'#757575'}}>SITE</Typography>
                         <Typography sx={{fontWeight:'bold', color:'#ef6c00', fontSize:'30px'}}>VIX</Typography>
                     </Typography>
                     
@@ -83,7 +81,7 @@ function ResponsiveAppBar() {
                         >
                             <Box>
 
-                                <Button href='/'>Página Inicial</Button>
+                                <Button href='/' >Página Inicial</Button>
                             </Box>
                             <Box>
 
@@ -96,7 +94,6 @@ function ResponsiveAppBar() {
 
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -113,21 +110,22 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                          <Typography sx={{fontWeight:'bold', fontSize:'30px', color:'#757575'}}>SITE</Typography>
+                        <Typography sx={{fontWeight:'bold', color:'#ef6c00', fontSize:'30px'}}>VIX</Typography>
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             href='/'
-                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            sx={{ my: 2, color: '#757575', display: 'block' }}>
                             Página Inicial
                         </Button>
                         <Button
-                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            sx={{ my: 2, color: '#757575', display: 'block' }}>
                             Sites
                         </Button>
                         <Button
                             href='/pages/contact'
-                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            sx={{ my: 2, color: '#757575', display: 'block' }}>
                             Contato
                         </Button>
                     </Box>

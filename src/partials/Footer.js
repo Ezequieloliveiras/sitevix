@@ -5,7 +5,7 @@ import { Container, Grid, Typography, Link } from '@mui/material';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#333', color: '#fff', padding: '50px 0' }}>
+    <footer style={{ backgroundColor: '#757575', color: '#fff', padding: '50px 0' }}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
