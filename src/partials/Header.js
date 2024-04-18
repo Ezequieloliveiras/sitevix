@@ -115,7 +115,7 @@ function ResponsiveAppBar() {
 
                     </Menu>
                 </Box>
-                <Typography
+                {/* <Typography
                     variant="h5"
                     noWrap
                     component="a"
@@ -133,7 +133,7 @@ function ResponsiveAppBar() {
                 >
                     <Typography sx={{ fontWeight: 'bold', fontSize: '30px', color: '#757575' }}>SITE</Typography>
                     <Typography sx={{ fontWeight: 'bold', color: '#ef6c00', fontSize: '30px' }}>VIX</Typography>
-                </Typography>
+                </Typography> */}
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                     <Button
                         href='/'
