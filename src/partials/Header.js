@@ -11,31 +11,39 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Button from '@mui/material/Button'
 import styled from 'styled-components'
 
-const StyledAppBar = styled(AppBar).attrs({
+const StyledAppBar = styled(AppBar)`
 
-    position: "static"
-})`
-
-&& {
-
-    background-color:#fff;
-     display:flex;
-     justify-content:center;
-   
-}
+    && {
+        background-color:#fff;
+        display:flex;
+        justify-content:center;
+    }
 
 `
 
 const StyledToolbar = styled(Toolbar)`
 
-&& {
-
-    display: flex;
-     justify-content: center;
-      margin: auto;
-      color: #757575;
-}
+    && {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        color: #757575;
+    }
 `
+const StyledTypographyOne = styled(Toolbar)`
+
+    && {
+
+        display: flex;
+        font-family: monospace;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        color: inherit;
+        text-decoration: none;
+    }
+`
+
+
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null)
@@ -52,24 +60,15 @@ function ResponsiveAppBar() {
         <StyledAppBar position="static" >
 
             <StyledToolbar disableGutters >
-                <Typography
+                <StyledTypographyOne
                     variant="h6"
                     noWrap
                     component="a"
                     href="#app-bar-with-responsive-menu"
-                    sx={{
-                        mr: 2,
-                        display: { xs: 'none', md: 'flex' },
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        textDecoration: 'none',
-                    }}
                 >
                     <Typography sx={{ fontWeight: 'bold', fontSize: '30px', color: '#757575' }}>SITE</Typography>
                     <Typography sx={{ fontWeight: 'bold', color: '#ef6c00', fontSize: '30px' }}>VIX</Typography>
-                </Typography>
+                </StyledTypographyOne>
 
 
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

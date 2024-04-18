@@ -1,15 +1,12 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+
 import { Grid } from '@mui/material'
 import Carousel from '../components/Carousel'
-import image1 from '../app/image1.jpg'
-import image2 from '../app/image2.jpg'
-import image3 from '../app/image3.jpg'
+import image1 from '../app/images/image1.jpg'
+import image2 from '../app/images/image2.jpg'
+import image3 from '../app/images/image3.jpg'
 import Image from 'next/image'
-
-
-
 
 export default function Home() {
  
@@ -93,7 +90,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Destaque a sua marca e alcance um público global com um site corporativo profissional.
@@ -123,7 +120,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
@@ -153,7 +150,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
@@ -205,7 +202,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Nossa equipe tem anos de experiência em design e desenvolvimento de sites, garantindo qualidade e profissionalismo em cada projeto.
@@ -225,7 +222,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Criamos sites sob medida para cada cliente, garantindo que cada detalhe represente fielmente a sua marca e atraia seu público-alvo.
@@ -245,7 +242,7 @@ export default function Home() {
                 color: '#666',
                 fontSize: 18,
                 lineHeight: '1.6',
-                textAlign: 'center',
+                textAlign: 'left',
                 '@media (max-width: 600px)': { fontSize: '1rem' }
               }}>
                 Estamos sempre aqui para ajudar! Oferecemos suporte contínuo após o lançamento do site, garantindo que você esteja sempre satisfeito com nosso serviço.
