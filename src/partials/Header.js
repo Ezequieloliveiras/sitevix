@@ -1,4 +1,3 @@
-'use client'
 
 
 import { useState } from 'react'
@@ -22,7 +21,7 @@ const StyledAppBar = styled(AppBar).attrs({
     background-color:#fff;
      display:flex;
      justify-content:center;
-     align-items:'center'
+   
 }
 
 `
