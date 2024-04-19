@@ -18,7 +18,6 @@ import {
 } from './StylesHeader'
 
 
-
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null)
 
