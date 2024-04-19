@@ -1,9 +1,7 @@
-'use client'
 
 import React from 'react';
 import { Card, CardMedia } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
-
 
 
 export default function CarouselComponent() {

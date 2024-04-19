@@ -1,7 +1,6 @@
 'use client'
 import StyledComponentsRegistry from './registry'
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from '../partials/Header'
 import Footer from '../partials/Footer'
 import styled from 'styled-components'
@@ -13,7 +12,6 @@ const StyledBody = styled.body`
 margin: 0;
 padding: 0;
 `
-
 
 export default function RootLayout({ children }) {
   return (

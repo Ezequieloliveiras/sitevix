@@ -65,6 +65,9 @@ const StyledBoxSection = styled(Box)`
     && {
       max-width: 1200px;
       margin: 0 auto;
+        @media (max-width: 600px) {
+            padding: 0 15px;
+        }
     }
 `
 
@@ -98,7 +101,7 @@ const StyledParagraphy= styled.p`
       color: #666;
       font-size: 1.2em;
       line-height: 1.6;
-      text-align: left;
+      text-align: center;
     }
 `
 
