@@ -65,6 +65,14 @@ const StyledBoxButtons = styled(Box)`
     }
 `
 
+
+const StyledBoxButtonsMenuIcon = styled(Button)`
+
+    && {
+        color: #ef6c00;
+    }
+`
+
 const StyledBoxButtonsMenu = styled(Button)`
 
     && {
@@ -92,6 +100,7 @@ export {
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
+    StyledBoxButtonsMenuIcon,
     StyledBoxButtonsMenu,
     StyledBoxContent,
 }

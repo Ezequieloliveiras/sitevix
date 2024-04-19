@@ -12,6 +12,7 @@ import {
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
+    StyledBoxButtonsMenuIcon,
     StyledBoxButtonsMenu,
     StyledBoxContent,
 
@@ -79,15 +80,21 @@ function ResponsiveAppBar() {
                         }}
                     >
                         <Box>
-                            <Button href='/' >Página Inicial</Button>
+                            <StyledBoxButtonsMenuIcon href='/'>
+                                Página Inicial
+                            </StyledBoxButtonsMenuIcon>
                         </Box>
 
                         <Box>
-                            <Button>Sites</Button>
+                            <StyledBoxButtonsMenuIcon>
+                                Sites
+                            </StyledBoxButtonsMenuIcon>
                         </Box>
 
                         <Box>
-                            <Button href='/pages/contact'>Contato</Button>
+                            <StyledBoxButtonsMenuIcon href='/pages/contact'>
+                                Contato
+                            </StyledBoxButtonsMenuIcon>
                         </Box>
 
                     </Menu>
