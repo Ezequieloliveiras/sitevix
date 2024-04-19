@@ -1,47 +1,21 @@
-
-
 import { useState } from 'react'
-import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
-import Typography from '@mui/material/Typography'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
 import Button from '@mui/material/Button'
-import styled from 'styled-components'
 
-const StyledAppBar = styled(AppBar)`
+import {
+    StyledAppBar,
+    StyledToolbar,
+    StyledTypographyOne,
+    StyledTypographyLogo,
+    StyledTypographyPartialLogo,
+    StyledBoxButtons,
+    StyledBoxButtonsMenu,
+    StyledBoxContent,
 
-    && {
-        background-color:#fff;
-        display:flex;
-        justify-content:center;
-    }
-
-`
-
-const StyledToolbar = styled(Toolbar)`
-
-    && {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        color: #757575;
-    }
-`
-const StyledTypographyOne = styled(Toolbar)`
-
-    && {
-
-        display: flex;
-        font-family: monospace;
-        font-weight: 700;
-        letter-spacing: .3rem;
-        color: inherit;
-        text-decoration: none;
-    }
-`
+} from './StylesHeader'
 
 
 
@@ -57,21 +31,24 @@ function ResponsiveAppBar() {
     }
 
     return (
-        <StyledAppBar position="static" >
+        <StyledAppBar position="static">
 
-            <StyledToolbar disableGutters >
+            <StyledToolbar disableGutters>
+
                 <StyledTypographyOne
                     variant="h6"
                     noWrap
                     component="a"
                     href="#app-bar-with-responsive-menu"
                 >
-                    <Typography sx={{ fontWeight: 'bold', fontSize: '30px', color: '#757575' }}>SITE</Typography>
-                    <Typography sx={{ fontWeight: 'bold', color: '#ef6c00', fontSize: '30px' }}>VIX</Typography>
+                    <StyledTypographyLogo >SITE</StyledTypographyLogo>
+
+                    <StyledTypographyPartialLogo >VIX</StyledTypographyPartialLogo>
+
                 </StyledTypographyOne>
 
+                <StyledBoxButtons>
 
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                     <IconButton
                         size="large"
                         aria-label="account of current user"
@@ -81,7 +58,9 @@ function ResponsiveAppBar() {
                         color="inherit"
                     >
                         <MenuIcon />
+
                     </IconButton>
+
                     <Menu
                         id="menu-appbar"
                         anchorEl={anchorElNav}
@@ -101,58 +80,39 @@ function ResponsiveAppBar() {
                         }}
                     >
                         <Box>
-
                             <Button href='/' >Página Inicial</Button>
                         </Box>
-                        <Box>
 
+                        <Box>
                             <Button>Sites</Button>
                         </Box>
-                        <Box>
 
+                        <Box>
                             <Button href='/pages/contact'>Contato</Button>
                         </Box>
 
                     </Menu>
-                </Box>
-                {/* <Typography
-                    variant="h5"
-                    noWrap
-                    component="a"
-                    href="#app-bar-with-responsive-menu"
-                    sx={{
-                        mr: 2,
-                        display: { xs: 'flex', md: 'none' },
-                        flexGrow: 1,
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
-                        letterSpacing: '.3rem',
-                        color: 'inherit',
-                        textDecoration: 'none',
-                    }}
-                >
-                    <Typography sx={{ fontWeight: 'bold', fontSize: '30px', color: '#757575' }}>SITE</Typography>
-                    <Typography sx={{ fontWeight: 'bold', color: '#ef6c00', fontSize: '30px' }}>VIX</Typography>
-                </Typography> */}
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                    <Button
-                        href='/'
-                        sx={{ my: 2, color: '#757575', display: 'block' }}>
+                </StyledBoxButtons>
+
+                <StyledBoxContent >
+
+                    <StyledBoxButtonsMenu href='/'>
                         Página Inicial
-                    </Button>
-                    <Button
-                        sx={{ my: 2, color: '#757575', display: 'block' }}>
+                    </StyledBoxButtonsMenu>
+
+                    <StyledBoxButtonsMenu>
                         Sites
-                    </Button>
-                    <Button
-                        href='/pages/contact'
-                        sx={{ my: 2, color: '#757575', display: 'block' }}>
+                    </StyledBoxButtonsMenu>
+
+                    <StyledBoxButtonsMenu href='/pages/contact'>
                         Contato
-                    </Button>
-                </Box>
+                    </StyledBoxButtonsMenu>
+
+                </StyledBoxContent>
+
             </StyledToolbar>
 
         </StyledAppBar>
-    );
+    )
 }
-export default ResponsiveAppBar;
+export default ResponsiveAppBar
