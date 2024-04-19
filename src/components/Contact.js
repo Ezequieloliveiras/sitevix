@@ -20,7 +20,7 @@ const ContactPage = () => {
 
       <StyledGridContainer container>
 
-        <Grid item xs={12} sm={8} md={4} lg={2} margin={10}>
+        <Grid item xs={12} sm={8} md={6} lg={4} margin={10}>
         
             <Typography variant="h4" align="center" gutterBottom>
               Contato
