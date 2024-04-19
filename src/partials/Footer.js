@@ -27,11 +27,11 @@ const Footer = () => {
 
             <StyledList >
 
-              <li>Email: ezequieloliveiraes@outlook.com</li>
+              <Typography>Email: ezequieloliveiraes@outlook.com</Typography>
 
-              <li>Telefone: (27) 99733-7338</li>
+              <Typography>Telefone: (27) 99733-7338</Typography>
 
-              <li>Endereço: Vitória-ES</li>
+              <Typography>Endereço: Vitória-ES</Typography>
 
             </StyledList>
 
@@ -55,7 +55,7 @@ const Footer = () => {
 
             <StyledList>
 
-              <li>
+              <Typography>
 
                 <StyledLink href="#" >
 
@@ -63,9 +63,9 @@ const Footer = () => {
 
                 </StyledLink>
 
-              </li>
+              </Typography>
 
-              <li>
+              <Typography>
 
                 <StyledLink href="#">
 
@@ -73,7 +73,7 @@ const Footer = () => {
 
                 </StyledLink>
 
-              </li>
+              </Typography>
 
             </StyledList>
 

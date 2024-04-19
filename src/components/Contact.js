@@ -16,7 +16,7 @@ const ContactPage = () => {
 
 
   return (
-    <div>
+    <>
 
       <StyledGridContainer container>
 
@@ -28,7 +28,7 @@ const ContactPage = () => {
 
             <Box bgcolor="#f9f9f9" borderRadius={10} padding={8} marginTop={2}>
 
-              <Typography variant="body1">
+              <Typography >
 
                 Para entrar em contato conosco, utilize os seguintes meios:
 
@@ -38,25 +38,17 @@ const ContactPage = () => {
                 
                 <Box marginBottom={1}>
 
-                  <Typography variant="body1">
-
-                    <span>Email:</span>
+                    <Typography>Email:</Typography>
 
                     <Link href="mailto:ezequieloliveiraes@outlook.com">ezequieloliveiraes@outlook.com</Link>
-
-                  </Typography>
 
                 </Box>
 
                 <Box>
 
-                  <Typography variant="body1">
-
-                    <span >WhatsApp:</span>
+                    <Typography>WhatsApp:</Typography>
 
                     <Link href="https://api.whatsapp.com/send?phone=27997337338">Seu número de WhatsApp</Link>
-
-                  </Typography>
 
                 </Box>
 
@@ -68,7 +60,7 @@ const ContactPage = () => {
 
       </StyledGridContainer>
 
-    </div>
+    </>
 
   )
 
