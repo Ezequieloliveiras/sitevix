@@ -1,15 +1,14 @@
 'use client'
 
-
 import { Grid } from '@mui/material'
 import Carousel from '../components/Carousel'
-import image1 from '../app/images/image1.jpg'
-import image2 from '../app/images/image2.jpg'
-import image3 from '../app/images/image3.jpg'
+import image1 from '../app/images/image1.png'
+import image2 from '../app/images/image2.png'
+import image3 from '../app/images/image3.png'
 import Image from 'next/image'
 
 export default function Home() {
- 
+
 
   return (
     <Grid container spacing={0} >
