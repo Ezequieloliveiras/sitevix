@@ -15,7 +15,7 @@ const data = [
 
     {id: '1', image: 'https://i.imgur.com/pEeobyC.png', title: 'Sites Corporativos'},
     {id: '2', image: 'https://i.imgur.com/eO8Kuau.png', title:'Lojas Online'},
-    {id: '3', image: 'https://i.imgur.com/wtE0Lky.png', title:'Site de Arte Ambiente'},
+    {id: '3', image: 'https://i.imgur.com/wtE0Lky.png', title:'Sites de Arte Ambiente'},
 
 ]
 
