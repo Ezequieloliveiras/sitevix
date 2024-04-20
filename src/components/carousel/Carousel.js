@@ -28,7 +28,7 @@ const data = [
 
     {id: '1', image: 'https://i.imgur.com/dqReFVN.png'},
     {id: '2', image: 'https://i.imgur.com/Y79N3k0.png'},
-    {id: '3', image: 'https://i.imgur.com/YjOECuw.png'},
+    {id: '3', image: 'https://i.imgur.com/NQHrmKl.png'},
 
 ]
 
