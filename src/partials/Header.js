@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import {
     StyledAppBar,
     StyledToolbar,
-    StyledDivLogo,
+    StyledLinkLogo,
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
@@ -34,17 +34,13 @@ function ResponsiveAppBar() {
 
             <StyledToolbar disableGutters>
 
-                <StyledDivLogo
-                    variant="h6"
-                    noWrap
-                    component="a"
-                    href="#app-bar-with-responsive-menu"
-                >
+                <StyledLinkLogo href="/" >
+
                     <StyledTypographyLogo >SITE</StyledTypographyLogo>
 
-                    <StyledTypographyPartialLogo >VIX</StyledTypographyPartialLogo>
+                    <StyledTypographyPartialLogo>VIX</StyledTypographyPartialLogo>
 
-                </StyledDivLogo>
+                </StyledLinkLogo>
 
                 <StyledBoxButtons>
 

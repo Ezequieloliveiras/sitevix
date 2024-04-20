@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 
 const StyledAppBar = styled(AppBar)`
@@ -25,7 +26,7 @@ const StyledToolbar = styled(Toolbar)`
         color: #757575;
     }
 `
-const StyledDivLogo= styled.div`
+const StyledLinkLogo= styled(Link)`
 
     && {
         display: flex;
@@ -96,7 +97,7 @@ const StyledBoxContent = styled(Box)`
 export {
     StyledAppBar,
     StyledToolbar,
-    StyledDivLogo,
+    StyledLinkLogo,
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
