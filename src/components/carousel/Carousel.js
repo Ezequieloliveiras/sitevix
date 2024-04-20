@@ -26,9 +26,9 @@ function Carousel() {
 
 const data = [
 
-    {id: '1', image: 'https://i.imgur.com/dqReFVN.png'},
-    {id: '2', image: 'https://i.imgur.com/Y79N3k0.png'},
-    {id: '3', image: 'https://i.imgur.com/NQHrmKl.png'},
+    {id: '1', image: 'https://i.imgur.com/YjOECuw.png', title: 'Sites Corporativos'},
+    {id: '2', image: 'https://i.imgur.com/LDEDzxf.png', title:'Lojas Online'},
+    {id: '3', image: 'https://i.imgur.com/yyf4zb8.png', title:'Site de Arte Ambiente'},
 
 ]
 
@@ -36,23 +36,22 @@ const data = [
     return(
 
         <div className='container'>
-            <Swiper className='swiper-slider'
-            slidesPerView={1}
-            pagination={{clickable: true}}
-            navigation
-            >
-              {data.map((item) => (
-                  <SwiperSlide key={item.id} className='swiper-slider' autoP>
-                   
-                    <img src={item.image}
-                    alt='slider'
-                    className='slider-item'
-                    />
-                    
-                  </SwiperSlide>
-              ))}
-            </Swiper>
-        </div>
+        <Swiper className='swiper-slider'
+          slidesPerView={1}
+          pagination={{clickable: true}}
+          navigation
+        >
+          {data.map((item) => (
+            <SwiperSlide key={item.id} className='swiper-slider' autoP>
+              <div className="slider-item-container">
+                <img src={item.image} alt='slider' className='slider-item' />
+                <div className="slider-item-title">{item.title}</div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      
     )
 }
 
