@@ -11,24 +11,14 @@ import 'swiper/css/scrollbar'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import Models from './images/models.png'
-import Art from './images/art.png'
-import Corporate from './images/Corporate.png'
-import Image from 'next/image'
 
 function Carousel() {
 
-    // const imageArray = [
-    //     {id: '1',image: Models},
-    //     {id: '2',image: Art},
-    //     {id: '3',image: Corporate},
-    // ];
-
 const data = [
 
-    {id: '1', image: 'https://i.imgur.com/YjOECuw.png', title: 'Sites Corporativos'},
-    {id: '2', image: 'https://i.imgur.com/LDEDzxf.png', title:'Lojas Online'},
-    {id: '3', image: 'https://i.imgur.com/yyf4zb8.png', title:'Site de Arte Ambiente'},
+    {id: '1', image: 'https://i.imgur.com/pEeobyC.png', title: 'Sites Corporativos'},
+    {id: '2', image: 'https://i.imgur.com/eO8Kuau.png', title:'Lojas Online'},
+    {id: '3', image: 'https://i.imgur.com/wtE0Lky.png', title:'Site de Arte Ambiente'},
 
 ]
 
