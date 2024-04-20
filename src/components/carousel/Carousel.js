@@ -1,15 +1,13 @@
-
-import './carousel.css'
 import {register} from 'swiper/element/bundle'
-
-register()
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import './carousel.css'
 
+register()
 
 function Carousel() {
 
@@ -24,20 +22,31 @@ const data = [
     return(
 
         <div className='container'>
-        <Swiper className='swiper-slider'
+
+        <Swiper 
+          className='swiper-slider'
           slidesPerView={1}
           pagination={{clickable: true}}
           
         >
           {data.map((item) => (
-            <SwiperSlide key={item.id} className='swiper-slider' autoP>
+
+            <SwiperSlide key={item.id} className='swiper-slider' autoPlay>
+
               <div className="slider-item-container">
+
                 <img src={item.image} alt='slider' className='slider-item' />
+
                 <div className="slider-item-title">{item.title}</div>
+
               </div>
+
             </SwiperSlide>
+
           ))}
+
         </Swiper>
+
       </div>
       
     )
