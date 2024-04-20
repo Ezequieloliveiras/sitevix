@@ -34,6 +34,7 @@ const StyledTypographyOne = styled(Typography)`
         letter-spacing: .3rem;
         color: inherit;
         text-decoration: none;
+        margin-right: 10px;
     }
 `
 const StyledTypographyLogo = styled(Typography)`
@@ -58,7 +59,6 @@ const StyledBoxButtons = styled(Box)`
     && {
         flex-grow: 1;
         display: flex;
-
         @media (min-width: 768px) {
         display: none; /* Esconde em telas médias e maiores */
         }
