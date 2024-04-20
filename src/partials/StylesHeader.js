@@ -25,7 +25,7 @@ const StyledToolbar = styled(Toolbar)`
         color: #757575;
     }
 `
-const StyledTypographyOne = styled(Typography)`
+const StyledDivLogo= styled.div`
 
     && {
         display: flex;
@@ -96,7 +96,7 @@ const StyledBoxContent = styled(Box)`
 export {
     StyledAppBar,
     StyledToolbar,
-    StyledTypographyOne,
+    StyledDivLogo,
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
