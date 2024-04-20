@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 import { Box, Grid } from '@mui/material'
 
-import Image from 'next/image'
-
 const StyledGridSectionOne = styled(Grid)`
     && {
       background-color: #fff;

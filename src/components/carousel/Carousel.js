@@ -13,9 +13,9 @@ function Carousel() {
 
 const data = [
 
-    {id: '1', image: 'https://i.imgur.com/pEeobyC.png', title: 'Sites Corporativos'},
-    {id: '2', image: 'https://i.imgur.com/eO8Kuau.png', title:'Lojas Online'},
-    {id: '3', image: 'https://i.imgur.com/wtE0Lky.png', title:'Sites de Arte Ambiente'},
+    {id: '1', image: 'https://i.imgur.com/y1Y45bi.png', title: 'Sites Corporativos'},
+    {id: '2', image: 'https://i.imgur.com/zY7T5rO.png', title:'Lojas Online'},
+    {id: '3', image: 'https://i.imgur.com/ZPFhEf5.png', title:'Sites de Arte Ambiente'},
 
 ]
 
@@ -37,7 +37,7 @@ const data = [
 
                 <img src={item.image} alt='slider' className='slider-item' />
 
-                <div className="slider-item-title">{item.title}</div>
+                {/* <div className="slider-item-title">{item.title}</div> */}
 
               </div>
 
