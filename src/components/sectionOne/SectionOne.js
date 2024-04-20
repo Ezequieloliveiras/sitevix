@@ -6,7 +6,7 @@ import {
   StyledTitleOne,
   StyledParagraphyOne,
   StyledButtonGo,
-} from '../../app/HomeStyles'
+} from '../HomeStyles'
 
 export default function SectionOne() {
 
@@ -32,11 +32,7 @@ export default function SectionOne() {
 
           <StyledButtonGo>
 
-            <Typography>
-
               Comece agora
-
-            </Typography>
 
           </StyledButtonGo>
 

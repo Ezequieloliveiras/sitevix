@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid } from '@mui/material'
 
 import {
   StyledBoxSection,
@@ -6,7 +6,7 @@ import {
   StyledSubtitle,
   StyledParagraphy,
   StyledGridSectionTree,
-} from '../../app/HomeStyles'
+} from '../HomeStyles'
 
 export default function SectionTree() {
 

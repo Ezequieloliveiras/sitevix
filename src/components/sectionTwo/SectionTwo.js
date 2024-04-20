@@ -8,7 +8,7 @@ import {
   StyledParagraphy,
   StyledBoxImage,
   StyledImage,
-} from '../../app/HomeStyles'
+} from '../HomeStyles'
 
 export default function SectionTwo() {
 

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-
+import 'swiper/css/autoplay'
 import './carousel.css'
 
 register()
@@ -27,17 +27,15 @@ const data = [
           className='swiper-slider'
           slidesPerView={1}
           pagination={{clickable: true}}
-          
-        >
+          autoplay={true}
+          >
           {data.map((item) => (
 
-            <SwiperSlide key={item.id} className='swiper-slider' autoPlay>
+            <SwiperSlide key={item.id} className='swiper-slider'>
 
               <div className="slider-item-container">
 
                 <img src={item.image} alt='slider' className='slider-item' />
-
-                {/* <div className="slider-item-title">{item.title}</div> */}
 
               </div>
 

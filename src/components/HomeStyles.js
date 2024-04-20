@@ -44,6 +44,7 @@ const StyledButtonGo = styled.button`
     && {
       padding: 15px 30px;
       background-color: #f57c00;
+      font-size: 18px;
       color: #fff;
       border: none;
       border-radius: 5px;
