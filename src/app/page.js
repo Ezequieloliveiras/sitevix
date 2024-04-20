@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid , Typography} from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import Carousel from '../components/carousel/Carousel'
 import image1 from '../app/images/image1.png'
 import image2 from '../app/images/image2.png'
@@ -93,10 +93,10 @@ export default function Home() {
 
               <StyledBoxImage>
 
-                <StyledImage src={image1} alt="Sites Corporativos"/>
+              <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
 
               </StyledBoxImage>
-              
+
             </Grid>
 
             <Grid item xs={12} sm={4}>
@@ -115,7 +115,7 @@ export default function Home() {
 
               <StyledBoxImage>
 
-                <StyledImage src={image2} alt="Lojas Online"/>
+              <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
 
               </StyledBoxImage>
 
@@ -137,7 +137,7 @@ export default function Home() {
 
               <StyledBoxImage>
 
-                <StyledImage src={image3} alt="Portfólios de Arte"/>
+                <StyledImage src='https://i.imgur.com/wuxDWOn.png' alt="Portfólios de Arte" />
 
               </StyledBoxImage>
 
@@ -218,5 +218,5 @@ export default function Home() {
     </Grid>
 
   )
-  
+
 }

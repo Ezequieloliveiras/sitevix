@@ -125,7 +125,7 @@ const StyledGridSectionTree = styled(Grid)`
     }
 `
 
-const StyledImage = styled(Image)`
+const StyledImage = styled.img`
     && {
       width: 100%;
       height: auto;      
