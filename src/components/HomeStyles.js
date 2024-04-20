@@ -97,6 +97,7 @@ const StyledSubtitle= styled.h3`
 
 const StyledParagraphy= styled.p`
     && {
+      margin-bottom: 20px;
       color: #666;
       font-size: 1.2em;
       line-height: 1.6;
@@ -109,6 +110,7 @@ const StyledBoxImage= styled.div`
       width: 100%;
       height: auto;
       margin-top: 20px;
+      box-shadow: 1px 1px 10px black;
                 
       @media (max-width: 600px) {
           font-size: 1.rem;

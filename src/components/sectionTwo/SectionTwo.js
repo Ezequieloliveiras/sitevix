@@ -26,7 +26,7 @@ export default function SectionTwo() {
 
           </StyledTitleSection>
 
-          <Grid container spacing={3} justifyContent="center">
+          <Grid container spacing={3} justifyContent="center" >
 
             <Grid item xs={12} sm={4}>
 
