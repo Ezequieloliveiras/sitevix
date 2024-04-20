@@ -1,7 +1,7 @@
 'use client'
 
 import { Grid , Typography} from '@mui/material'
-import Carousel from '../components/Carousel'
+import Carousel from '../components/carousel/Carousel'
 import image1 from '../app/images/image1.png'
 import image2 from '../app/images/image2.png'
 import image3 from '../app/images/image3.png'
