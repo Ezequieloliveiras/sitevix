@@ -1,35 +1,37 @@
-import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import React, { useState } from 'react'
+import Box from '@mui/material/Box'
+import SwipeableDrawer from '@mui/material/SwipeableDrawer'
+import Button from '@mui/material/Button'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
 import MenuIcon from '@mui/icons-material/Menu'
-import Link from 'next/link';
+import HomeIcon from '@mui/icons-material/Home'
+import ElectricalServicesIcon from '@mui/icons-material/ElectricalServices'
+import CallIcon from '@mui/icons-material/Call'
+import ContactSupportIcon from '@mui/icons-material/ContactSupport'
+import AttachEmailIcon from '@mui/icons-material/AttachEmail'
+import Link from 'next/link'
 
-const anchorValues = ['left'];
+const anchorValues = ['left']
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = useState({
     left: false,
-  });
+  })
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&
       ((event.key === 'Tab') || (event.key === 'Shift'))
     ) {
-      return;
+      return
     }
 
-    setState({ ...state, [anchor]: open });
-  };
+    setState({ ...state, [anchor]: open })
+  }
 
   const list = (anchor) => (
     <Box
@@ -43,7 +45,7 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton component={Link} href='/'>
               <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+               <HomeIcon sx={{color:'#ef6c00'}}/>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -55,8 +57,8 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton component={Link} href=''>
               <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
+                <ElectricalServicesIcon sx={{color:'#ef6c00'}}/> 
+              </ListItemIcon >
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
@@ -67,7 +69,7 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton component={Link} href='/pages/contact'>
               <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <CallIcon sx={{color:'#ef6c00'}}/>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -79,7 +81,7 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton component={Link} href=''>
               <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <ContactSupportIcon sx={{color:'#ef6c00'}}/>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -87,11 +89,11 @@ export default function SwipeableTemporaryDrawer() {
         ))}
       </List>
       <List>
-        {['Enviar e-mail'].map((text, index) => (
+        {['Enviar email'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton component={Link} href=''>
               <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <AttachEmailIcon sx={{color:'#ef6c00'}}/>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -100,13 +102,13 @@ export default function SwipeableTemporaryDrawer() {
       </List>
 
     </Box>
-  );
+  )
 
   return (
     <div>
       {anchorValues.map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /></Button>
+          <Button onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:'#ef6c00'}} /></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
@@ -118,5 +120,5 @@ export default function SwipeableTemporaryDrawer() {
         </React.Fragment>
       ))}
     </div>
-  );
+  )
 }
