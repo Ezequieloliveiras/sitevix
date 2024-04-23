@@ -60,6 +60,14 @@ const StyledGridSectionTwo = styled(Grid)`
       text-align: center;
     }
 `
+const StyledBoxTitle = styled(Box)`
+  && {
+    @media (min-width: 700px) and (max-width: 1200px) {
+        height: 202px;
+    }
+  }
+`;
+
 const StyledBoxSection = styled(Box)`
     && {
       max-width: 1200px;
@@ -140,6 +148,7 @@ export{
     StyledParagraphyOne,
     StyledButtonGo,
     StyledGridSectionTwo,
+    StyledBoxTitle,
     StyledBoxSection,
     StyledTitleSection,
     StyledSubtitle,
