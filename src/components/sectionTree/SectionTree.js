@@ -14,7 +14,7 @@ export default function SectionTree() {
   return (
     <>
 
-      <StyledGridSectionTree item xs={12}>
+      <StyledGridSectionTree item xs={12} sx={{height:'auto'}}>
 
         <StyledBoxSection>
 

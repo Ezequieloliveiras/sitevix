@@ -1,15 +1,14 @@
-import { Grid } from '@mui/material'
+import { Grid, Box } from '@mui/material'
 
 import {
   StyledGridSectionTwo,
-  StyledBoxTitle,
-  StyledBoxSection,
   StyledTitleSection,
-  StyledSubtitle,
-  StyledParagraphy,
-  StyledBoxImage,
-  StyledImage,
 } from '../HomeStyles'
+
+
+import CardPrimary from './CardPrimary'
+import CardTwo from './CardSecondary'
+import CardThird from './CardThird'
 
 export default function SectionTwo() {
 
@@ -19,90 +18,29 @@ export default function SectionTwo() {
 
       <StyledGridSectionTwo item xs={12}>
 
-        <StyledBoxSection>
-
           <StyledTitleSection >
 
             Tipos de Sites que Criamos
 
           </StyledTitleSection>
 
-          <Grid container spacing={3} justifyContent="center" >
+          <Box item xs={1} >
 
-            <Grid item xs={12} sm={4}>
-              <StyledBoxTitle>
+            <Box sx={{ display: 'flex', justifyContent: 'center' }} >
 
-                <StyledSubtitle >
+              <Grid container sx={{ display: 'flex', justifyContent: 'center' }} >
 
-                  Sites Corporativos
+                <CardPrimary />
 
-                </StyledSubtitle>
+                <CardTwo />
 
-                <StyledParagraphy>
+                <CardThird />
 
-                  Destaque a sua marca e alcance um público global com um site corporativo profissional.
+              </Grid>
 
-                </StyledParagraphy>
-              </StyledBoxTitle>
+            </Box>
 
-
-              <StyledBoxImage>
-
-                <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
-
-              </StyledBoxImage>
-
-            </Grid>
-
-
-
-            <Grid item xs={12} sm={4}>
-              <StyledBoxTitle>
-                <StyledSubtitle>
-
-                  Lojas Online
-
-                </StyledSubtitle>
-
-                <StyledParagraphy>
-
-                  Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
-
-                </StyledParagraphy>
-              </StyledBoxTitle>
-              <StyledBoxImage>
-
-                <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
-
-              </StyledBoxImage>
-
-            </Grid>
-
-            <Grid item xs={12} sm={4}>
-              <StyledBoxTitle>
-                <StyledSubtitle>
-
-                  Portfólios de Arte
-
-                </StyledSubtitle>
-
-                <StyledParagraphy>
-
-                  Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
-
-                </StyledParagraphy>
-              </StyledBoxTitle>
-              <StyledBoxImage>
-
-                <StyledImage src='https://i.imgur.com/wuxDWOn.png' alt="Portfólios de Arte" />
-
-              </StyledBoxImage>
-
-            </Grid>
-
-          </Grid>
-
-        </StyledBoxSection>
+          </Box>
 
       </StyledGridSectionTwo>
 

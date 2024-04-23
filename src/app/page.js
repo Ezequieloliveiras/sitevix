@@ -5,7 +5,6 @@ import Carousel from '../components/carousel/Carousel'
 import SectionOne from '@/components/sectionOne/SectionOne'
 import SectionTwo from '@/components/sectionTwo/SectionTwo'
 import SectionTree from '@/components/sectionTree/SectionTree'
-import SectionFor from '@/components/sectionFor/SectionFor'
 
 export default function Home() {
 
@@ -24,8 +23,6 @@ export default function Home() {
       <SectionTwo />
 
       <SectionTree />
-
-      <SectionFor/>
 
     </Grid>
 
