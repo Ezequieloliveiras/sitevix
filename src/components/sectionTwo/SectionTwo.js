@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 
 import {
   StyledGridSectionTwo,
+  StyledBoxTitle,
   StyledBoxSection,
   StyledTitleSection,
   StyledSubtitle,
@@ -29,63 +30,68 @@ export default function SectionTwo() {
           <Grid container spacing={3} justifyContent="center" >
 
             <Grid item xs={12} sm={4}>
+              <StyledBoxTitle>
 
-              <StyledSubtitle >
+                <StyledSubtitle >
 
-                Sites Corporativos
+                  Sites Corporativos
 
-              </StyledSubtitle>
+                </StyledSubtitle>
 
-              <StyledParagraphy>
+                <StyledParagraphy>
 
-                Destaque a sua marca e alcance um público global com um site corporativo profissional.
+                  Destaque a sua marca e alcance um público global com um site corporativo profissional.
 
-              </StyledParagraphy>
+                </StyledParagraphy>
+              </StyledBoxTitle>
+
 
               <StyledBoxImage>
 
-              <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
+                <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
+
+              </StyledBoxImage>
+
+            </Grid>
+
+
+
+            <Grid item xs={12} sm={4}>
+              <StyledBoxTitle>
+                <StyledSubtitle>
+
+                  Lojas Online
+
+                </StyledSubtitle>
+
+                <StyledParagraphy>
+
+                  Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
+
+                </StyledParagraphy>
+              </StyledBoxTitle>
+              <StyledBoxImage>
+
+                <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
 
               </StyledBoxImage>
 
             </Grid>
 
             <Grid item xs={12} sm={4}>
+              <StyledBoxTitle>
+                <StyledSubtitle>
 
-              <StyledSubtitle>
+                  Portfólios de Arte
 
-                Lojas Online
+                </StyledSubtitle>
 
-              </StyledSubtitle>
+                <StyledParagraphy>
 
-              <StyledParagraphy>
+                  Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
 
-                Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
-
-              </StyledParagraphy>
-
-              <StyledBoxImage>
-
-              <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
-
-              </StyledBoxImage>
-
-            </Grid>
-
-            <Grid item xs={12} sm={4}>
-
-              <StyledSubtitle>
-
-                Portfólios de Arte
-
-              </StyledSubtitle>
-
-              <StyledParagraphy>
-
-                Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
-
-              </StyledParagraphy>
-
+                </StyledParagraphy>
+              </StyledBoxTitle>
               <StyledBoxImage>
 
                 <StyledImage src='https://i.imgur.com/wuxDWOn.png' alt="Portfólios de Arte" />
