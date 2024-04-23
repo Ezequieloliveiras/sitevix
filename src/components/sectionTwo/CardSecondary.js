@@ -20,6 +20,7 @@ export default function ActionAreaCard() {
         <CardContent >
 
           <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
+            
             Lojas Online
 
           </Typography>

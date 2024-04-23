@@ -56,8 +56,8 @@ const StyledButtonGo = styled.button`
 const StyledGridSectionTwo = styled(Grid)`
     && {
       background-color: #f9f9f9;
-      padding-top: 20px;
-      padding-bottom: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
       text-align: center;
     }
 `
@@ -83,6 +83,7 @@ const StyledTitleSection = styled.h1`
     && {
       font-size: 2.6em;
       color: #757575;
+      margin-top: 50px;
       margin-bottom: 40px;
       text-align: center;
 
