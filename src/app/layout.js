@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Footer />
-
           </StyledComponentsRegistry>
         </StyledBody>
       </html>
