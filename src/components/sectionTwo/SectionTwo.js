@@ -10,6 +10,8 @@ import {
   StyledImage,
 } from '../HomeStyles'
 
+import CardCorporate from'./CardCorporate'
+
 export default function SectionTwo() {
 
 
@@ -27,16 +29,16 @@ export default function SectionTwo() {
           </StyledTitleSection>
 
           <Grid container spacing={3} justifyContent="center" >
-
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={5}>
 
               <StyledSubtitle >
 
                 Sites Corporativos
 
               </StyledSubtitle>
+            <CardCorporate />
 
-              <StyledParagraphy>
+              {/* <StyledParagraphy>
 
                 Destaque a sua marca e alcance um público global com um site corporativo profissional.
 
@@ -44,21 +46,21 @@ export default function SectionTwo() {
 
               <StyledBoxImage>
 
-              <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
+                <StyledImage src='https://i.imgur.com/9ogyyKs.png' alt="Corporativo" />
 
-              </StyledBoxImage>
+              </StyledBoxImage> */}
 
             </Grid>
 
             <Grid item xs={12} sm={4}>
-
-              <StyledSubtitle>
+               <StyledSubtitle>
 
                 Lojas Online
 
               </StyledSubtitle>
+            <CardCorporate />
 
-              <StyledParagraphy>
+              {/* <StyledParagraphy>
 
                 Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
 
@@ -66,9 +68,9 @@ export default function SectionTwo() {
 
               <StyledBoxImage>
 
-              <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
+                <StyledImage src='https://i.imgur.com/Gw0oBSf.png' alt="Lojas Online" />
 
-              </StyledBoxImage>
+              </StyledBoxImage>  */}
 
             </Grid>
 
@@ -79,7 +81,8 @@ export default function SectionTwo() {
                 Portfólios de Arte
 
               </StyledSubtitle>
-
+              <CardCorporate />
+{/* 
               <StyledParagraphy>
 
                 Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
@@ -90,7 +93,7 @@ export default function SectionTwo() {
 
                 <StyledImage src='https://i.imgur.com/wuxDWOn.png' alt="Portfólios de Arte" />
 
-              </StyledBoxImage>
+              </StyledBoxImage> */}
 
             </Grid>
 
