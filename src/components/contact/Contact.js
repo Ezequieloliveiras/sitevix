@@ -38,11 +38,15 @@ const StyledWhatsAppIcon = styled(WhatsAppIcon)`
 
 const ContactPage = () => {
 
-
   return (
     <>
 
-      <StyledGridContainer container sx={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+      <StyledGridContainer container
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
+        }}>
 
         <Grid
           item xs={12}
@@ -50,7 +54,7 @@ const ContactPage = () => {
           md={6}
           lg={4}
           margin={10}
-        
+
         >
 
           <StyledTypography

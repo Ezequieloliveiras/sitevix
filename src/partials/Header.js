@@ -1,9 +1,3 @@
-import { useState } from 'react'
-import Box from '@mui/material/Box'
-import IconButton from '@mui/material/IconButton'
-import Menu from '@mui/material/Menu'
-import MenuIcon from '@mui/icons-material/Menu'
-
 import Drawer from './Drawer'
 
 import {
@@ -13,7 +7,6 @@ import {
     StyledTypographyLogo,
     StyledTypographyPartialLogo,
     StyledBoxButtons,
-    StyledBoxButtonsMenuIcon,
     StyledBoxButtonsMenu,
     StyledBoxContent,
 
@@ -21,15 +14,6 @@ import {
 
 
 function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = useState(null)
-
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget)
-    }
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null)
-    }
 
     return (
         <StyledAppBar position="static">
@@ -56,9 +40,9 @@ function ResponsiveAppBar() {
                         Página Inicial
                     </StyledBoxButtonsMenu>
 
-                    <StyledBoxButtonsMenu>
+                    {/* <StyledBoxButtonsMenu href='#'>
                         Sites
-                    </StyledBoxButtonsMenu>
+                    </StyledBoxButtonsMenu> */}
 
                     <StyledBoxButtonsMenu href='/pages/contact'>
                         Contato

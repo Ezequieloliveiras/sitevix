@@ -18,7 +18,7 @@ export default function SectionTwo() {
 
       <StyledGridSectionTwo item xs={12}>
 
-          <StyledTitleSection >
+          <StyledTitleSection>
 
             Tipos de Sites que Criamos
 
