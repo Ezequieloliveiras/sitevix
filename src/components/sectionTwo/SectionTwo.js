@@ -6,9 +6,9 @@ import {
 } from '../HomeStyles'
 
 
-import CardPrimary from './CardPrimary'
-import CardTwo from './CardSecondary'
-import CardThird from './CardThird'
+import CardPrimary from './cards/CardPrimary'
+import CardTwo from './cards/CardSecondary'
+import CardThird from './cards/CardThird'
 
 export default function SectionTwo() {
 

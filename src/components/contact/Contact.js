@@ -17,7 +17,9 @@ const StyledBox = styled(Box)`
     border: 1px solid grey;
     background-color: #f9f9f9;
     border-radius: 10px ;
-    padding: 50px;
+    padding: 20px;
+    margin: 5px;
+    max-width: 300px;
 `
 
 const StyledBoxContacts = styled(Box)`
@@ -40,7 +42,7 @@ const ContactPage = () => {
   return (
     <>
 
-      <StyledGridContainer container>
+      <StyledGridContainer container sx={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
 
         <Grid
           item xs={12}
@@ -48,6 +50,7 @@ const ContactPage = () => {
           md={6}
           lg={4}
           margin={10}
+        
         >
 
           <StyledTypography
