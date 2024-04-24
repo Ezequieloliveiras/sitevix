@@ -42,11 +42,7 @@ const ContactPage = () => {
     <>
 
       <StyledGridContainer container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center'
-        }}>
+  >
 
         <Grid
           item xs={12}
@@ -61,6 +57,7 @@ const ContactPage = () => {
             variant="h3"
             align="center"
             gutterBottom
+            
           >
             Contato
           </StyledTypography>
