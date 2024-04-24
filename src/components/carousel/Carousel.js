@@ -14,7 +14,7 @@ function Carousel() {
 const data = [
 
     {id: '1', image: 'https://i.imgur.com/eXpeNf2.png', title: 'Sites Corporativos'},
-    {id: '2', image: 'https://i.imgur.com/CjyhIcx.png', title:'Lojas Online'},
+    {id: '2', image: 'https://i.imgur.com/bWLTwdI.png', title:'Lojas Online'},
     {id: '3', image: 'https://i.imgur.com/CzA6DD2.png', title:'Blogs'},
 
 ]
