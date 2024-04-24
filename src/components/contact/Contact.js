@@ -41,23 +41,29 @@ const ContactPage = () => {
   return (
     <>
 
-      <StyledGridContainer container
-  >
 
-        <Grid
-          item xs={12}
-          sm={8}
-          md={6}
-          lg={4}
-          margin={10}
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          height: '100vh',
+          justifyContent: 'center'
+        }}>
 
-        >
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
 
           <StyledTypography
             variant="h3"
-            align="center"
+
             gutterBottom
-            
+
           >
             Contato
           </StyledTypography>
@@ -97,10 +103,10 @@ const ContactPage = () => {
 
           </StyledBox>
 
-        </Grid>
+        </div>
 
-      </StyledGridContainer>
 
+      </div>
     </>
 
   )
