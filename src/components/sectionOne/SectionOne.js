@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   StyledGridSectionOne,
   StyledBoxSectionOne,
@@ -7,7 +8,6 @@ import {
 } from '../HomeStyles'
 
 export default function SectionOne() {
-
 
   return (
     <>
@@ -28,11 +28,15 @@ export default function SectionOne() {
 
           </StyledParagraphyOne>
 
-          <StyledButtonGo>
+          <Link href='https://wa.me/27997337338'>
 
-              Comece agora
+          <StyledButtonGo >
+
+              Faça um orçamento
 
           </StyledButtonGo>
+
+          </Link>
 
         </StyledBoxSectionOne>
 

@@ -2,7 +2,6 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { CardActionArea } from '@mui/material'
 
 import ModalImage from '../modal/Modal'
 
@@ -11,8 +10,6 @@ export default function ActionAreaCard() {
 
 
     <Card sx={{ maxWidth: 345, margin: '5px' }}>
-
-      <CardActionArea>
 
         <CardMedia
           component="img"
@@ -36,7 +33,7 @@ export default function ActionAreaCard() {
           </Typography>
 
         </CardContent>
-      </CardActionArea>
+      
       <ModalImage />
 
     </Card>

@@ -11,11 +11,14 @@ const BoxImage = styled(Box)`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
 
     @media (max-width: 768px) {
         width: 95%;
+    }
+    
+    @media (min-width: 900px) {
+        width: 60%;
     }
 `
 
@@ -23,6 +26,7 @@ const BoxImage = styled(Box)`
 const ButtonModal = styled(Button)`
     background-color: #f57c00;
     color: #fff;
+    margin-top: 10px;
     margin-bottom: 20px;
 `
 
