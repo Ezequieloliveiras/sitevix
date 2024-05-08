@@ -24,7 +24,7 @@ export default function SectionTwo() {
 
           </StyledTitleSection>
 
-          <Box item xs={1} >
+          <Box>
 
             <Box sx={{ display: 'flex', justifyContent: 'center' }} >
 

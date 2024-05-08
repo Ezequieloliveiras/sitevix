@@ -57,7 +57,7 @@ const Footer = () => {
 
               <Typography>
 
-                <StyledLink href="#" >
+                <StyledLink  >
 
                   Termos de Serviço
 
@@ -67,7 +67,7 @@ const Footer = () => {
 
               <Typography>
 
-                <StyledLink href="#">
+                <StyledLink >
 
                   Política de Privacidade
 

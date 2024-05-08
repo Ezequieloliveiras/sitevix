@@ -39,11 +39,6 @@ function ResponsiveAppBar() {
                     <StyledBoxButtonsMenu href='/'>
                         Página Inicial
                     </StyledBoxButtonsMenu>
-
-                    {/* <StyledBoxButtonsMenu href='#'>
-                        Sites
-                    </StyledBoxButtonsMenu> */}
-
                     <StyledBoxButtonsMenu href='/pages/contact'>
                         Contato
                     </StyledBoxButtonsMenu>

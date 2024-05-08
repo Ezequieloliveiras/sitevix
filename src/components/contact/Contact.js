@@ -1,13 +1,9 @@
-import { Box, Typography, Link, Grid } from '@mui/material'
+import { Box, Typography, Link } from '@mui/material'
 import styled from 'styled-components'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox'
 
-const StyledGridContainer = styled(Grid)`
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-`
+
 
 const StyledTypography = styled(Typography)`
     color: #ef6c00;

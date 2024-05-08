@@ -4,6 +4,8 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 
+import ModalImage from '../modal/ModalTwo'
+
 export default function ActionAreaCard() {
   return (
     <Card sx={{ maxWidth: 345, margin: '5px' }}>
@@ -20,7 +22,7 @@ export default function ActionAreaCard() {
         <CardContent >
 
           <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
-            
+
             Lojas Online
 
           </Typography>
@@ -34,6 +36,8 @@ export default function ActionAreaCard() {
         </CardContent>
 
       </CardActionArea>
+
+      <ModalImage />
 
     </Card>
   )

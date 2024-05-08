@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
+import Modal from '../modal/ModalThird'
 
 export default function ActionAreaCard() {
   return (
@@ -33,6 +34,8 @@ export default function ActionAreaCard() {
         </CardContent>
 
       </CardActionArea>
+
+      <Modal/>
 
     </Card>
 
