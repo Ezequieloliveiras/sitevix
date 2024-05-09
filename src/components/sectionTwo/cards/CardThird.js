@@ -21,6 +21,7 @@ export default function ActionAreaCard() {
           <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
 
             Portfólios de Arte
+            
           </Typography>
 
           <Typography color="text.secondary">

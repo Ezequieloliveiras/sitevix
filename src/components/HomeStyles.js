@@ -5,6 +5,9 @@ import { Box, Grid } from '@mui/material'
 const StyledGridSectionOne = styled(Grid)`
     && {
       background-color: #fff;
+      height: 500px;
+      display: flex;
+      align-items: center;
       padding: 50px 10px 50px 10px;
       text-align: center;
     }
@@ -21,7 +24,7 @@ const StyledTitleOne = styled.h1`
     && {
       font-size: 2.8em;
       color: #757575;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       text-align: center;
 
       @media (max-width: 600px) {
@@ -56,7 +59,7 @@ const StyledButtonGo = styled.button`
 const StyledGridSectionTwo = styled(Grid)`
     && {
       background-color: #f9f9f9;
-      padding-top: 50px;
+      padding-top: 30px;
       padding-bottom: 50px;
       text-align: center;
     }
@@ -85,6 +88,7 @@ const StyledTitleSection = styled.h1`
       color: #757575;
       margin-top: 50px;
       margin-bottom: 40px;
+      padding-bottom: 50px;
       text-align: center;
 
       @media (max-width: 600px) {
@@ -131,6 +135,7 @@ const StyledBoxImage= styled.div`
 const StyledGridSectionTree = styled(Grid)`
     && {
       background-color: #fff;
+      min-height: 580px;
       padding: 50px 0;
       text-align: center;
     }
