@@ -16,11 +16,13 @@ import {
 function ResponsiveAppBar() {
 
     return (
+        
         <StyledAppBar position="static">
 
             <StyledToolbar disableGutters>
 
                 <StyledBoxButtons>
+
                 <Drawer />
                     
                 </StyledBoxButtons>
@@ -37,10 +39,15 @@ function ResponsiveAppBar() {
                 <StyledBoxContent >
 
                     <StyledBoxButtonsMenu href='/'>
+
                         Página Inicial
+
                     </StyledBoxButtonsMenu>
+
                     <StyledBoxButtonsMenu href='/pages/contact'>
+                        
                         Contato
+
                     </StyledBoxButtonsMenu>
 
                 </StyledBoxContent>

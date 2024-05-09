@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox'
 
-
+import FormContact from './formContact'
 
 const StyledTypography = styled(Typography)`
     color: #ef6c00;
@@ -48,7 +48,7 @@ const ContactPage = () => {
         }}>
 
 
-        <div
+        {/* <div
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -99,8 +99,11 @@ const ContactPage = () => {
 
           </StyledBox>
 
-        </div>
+        </div> */}
+        <div>
 
+        <FormContact />
+        </div>
 
       </div>
     </>
