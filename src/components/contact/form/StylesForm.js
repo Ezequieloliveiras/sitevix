@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-
   min-height: auto;
   display: flex;
   justify-content: center;
@@ -57,7 +56,6 @@ const Button = styled.input`
   color: #fff;
   background-color: #ef6c00;
   font-size: 18px;
-  transition: background-color, transform 0.8s;
 
   &:hover {
     background-color: #f58020;
