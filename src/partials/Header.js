@@ -55,7 +55,7 @@ function ResponsiveAppBar() {
 
                     <StyledBoxButtonsMenu href='/pages/support'>
 
-                        Suporte
+                        Suporte e Planos
 
                     </StyledBoxButtonsMenu>
 
