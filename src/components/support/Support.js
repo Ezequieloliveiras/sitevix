@@ -1,10 +1,8 @@
-
-import FormContact from './form/formContact'
-
 const ContactPage = () => {
 
   return (
     <>
+
 
       <div
         style={{
@@ -17,12 +15,10 @@ const ContactPage = () => {
         
         <div>
 
-        <FormContact />
-
+       Suporte em construção...
         </div>
 
       </div>
-      
     </>
 
   )

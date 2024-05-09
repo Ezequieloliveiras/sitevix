@@ -65,7 +65,6 @@ const StyledBoxButtons = styled(Box)`
     }
 `
 
-
 const StyledBoxButtonsMenuIcon = styled(Button)`
 
     && {
@@ -78,6 +77,7 @@ const StyledBoxButtonsMenu = styled(Button)`
     && {
         color: #757575;
         display: block;
+        text-transform: none;
     }
 `
 
@@ -86,6 +86,7 @@ const StyledBoxContent = styled(Box)`
     && {
         flex-grow: 1;
         display: none; /* Por padrão, esconde em telas extra pequenas (xs) */
+        margin-left: 5px;
 
         @media (min-width: 768px) {
             display: flex; /* Exibe em telas de tamanho médio (md) e maiores */
