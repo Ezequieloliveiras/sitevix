@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox'
 
-import FormContact from './formContact'
+import FormContact from './form/formContact'
 
 const StyledTypography = styled(Typography)`
     color: #ef6c00;
