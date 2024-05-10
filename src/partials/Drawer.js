@@ -80,11 +80,9 @@ export default function SwipeableTemporaryDrawer() {
       <List>
         {['Whatsapp'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton component={Link} href=''>
-              <ListItemIcon >
-                <Link href="https://api.whatsapp.com/send?phone=27997337338">
+            <ListItemButton component={Link} href='https://api.whatsapp.com/send?phone=27997337338'>
+              <ListItemIcon>
                   <WhatsAppIcon sx={{ color: 'green' }} />
-                </Link>
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
