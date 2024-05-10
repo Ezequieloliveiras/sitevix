@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
+import Message from './Success';
+
 import {
   Container,
   Title,
@@ -15,6 +17,7 @@ const App = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,9 +33,12 @@ const App = () => {
       email: email,
     };
 
-    emailjs.send('service_rewwzv9', 'template_shmj468', templateParams, '3AEl9b3Rkc7PXJki-').then(
+    emailjs.send('service_rewwzv9', 'template_shmj468', templateParams, '3AEl9b3Rkc7PXJki-')
+    .then(
       (response) => {
         console.log('email enviado', response.status, response.text);
+        setShowSuccessMessage(true);
+        setTimeout(() => setShowSuccessMessage(false), 5000); // Esconde a mensagem após 5 segundos
         setName('');
         setEmail('');
         setMessage('');
@@ -66,6 +72,7 @@ const App = () => {
         />
         <Button className="button" type="submit" value="Enviar" />
       </Form>
+      <Message visible={showSuccessMessage} />
     </Container>
   );
 };
