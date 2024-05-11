@@ -14,7 +14,7 @@ export default function ActionAreaCard() {
       <Box>
         
         <Image
-          layout='responsive'
+          style={{width:'100%', height:'auto'}}
           src={Loja}
           alt="loja online"
         />

@@ -25,6 +25,9 @@ const BoxImage = styled(Box)`
 `
 
 const ButtonModal = styled(Button)`
+
+&& {
+
     background-color: #f57c00;
     color: #fff;
     margin-top: 10px;
@@ -32,6 +35,7 @@ const ButtonModal = styled(Button)`
     &:hover {
         background-color: #ef6c00;
     }
+}
 `
 
 export default function BasicModal() {

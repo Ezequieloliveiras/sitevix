@@ -52,7 +52,7 @@ const Description = styled(Grid)`
 const BoxFooter = styled(Box)`
 
     && {
-      background-color: #ef6c00;
+      background-color: #fb8c00;
       color: #fff;
       padding: 50px 0 ;
     }

@@ -91,7 +91,7 @@ const Footer = () => {
 
         <StyledIframe
 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239519.1999118129!2d-40.32175681504925!3d-20.280079037509164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1715382117162!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='localização'>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239519.1999118129!2d-40.32175681504925!3d-20.280079037509164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1715382117162!5m2!1spt-BR!2sbr" alt='localização'>
 
         </StyledIframe>
 

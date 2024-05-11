@@ -12,7 +12,7 @@ export default function ActionAreaCard() {
     <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
       <Box>
         <Image
-          layout='responsive'
+          style={{width:'100%', height:'auto'}}
           src={Arte}
           alt="site de arte"
         />
