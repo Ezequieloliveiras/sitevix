@@ -14,7 +14,7 @@ export default function Home() {
 
       <Grid item xs={25}>
 
-        {/* <Carousel /> */}
+        <Carousel />
 
       </Grid>
 

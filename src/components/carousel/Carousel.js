@@ -7,9 +7,9 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
 import './carousel.css'
 
-import SitesCorporativos from '../../../public/CarouselImages/sitescorporativos.png'
-import Estetica from '../../../public/CarouselImages/estetica.png'
-import LojaOnline from '../../../public/CarouselImages/lojaonline.png'
+import SitesCorporativos from '../../../public/images/sitescorporativos.png'
+import Estetica from '../../../public/images/estetica.png'
+import LojaOnline from '../../../public/images/lojaonline.png'
 import Image from 'next/image'
 
 register()
