@@ -36,19 +36,19 @@ function SlideCarousel() {
 
           <div style={{ height: '500px' }}>
 
-            <Image src={SitesCorporativos} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Image src={SitesCorporativos} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='sitescorporativos' />
 
           </div>
 
           <div style={{ height: '500px' }}>
 
-            <Image src={Estetica} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Image src={Estetica} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='estetica' />
 
           </div>
 
           <div style={{ height: '500px' }}>
 
-            <Image src={LojaOnline} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Image src={LojaOnline} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='lojaonline' />
 
           </div>
 
