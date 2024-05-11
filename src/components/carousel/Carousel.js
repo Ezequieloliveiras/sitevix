@@ -1,13 +1,11 @@
 
 import Carousel from 'react-material-ui-carousel'
 import Image from 'next/image'
-
 import SitesCorporativos from '../../../public/images/sitescorporativos.png'
 import Estetica from '../../../public/images/estetica.png'
 import LojaOnline from '../../../public/images/lojaonline.png'
 import { Box } from '@mui/material'
 import styled from 'styled-components'
-
 
 const StyledBox = styled(Box)`
 height: 500px;
@@ -23,8 +21,6 @@ height: 500px ;
   }
 `
 
-
-
 function SlideCarousel() {
 
 
@@ -39,7 +35,7 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <Image src={SitesCorporativos}
+            <Image src={LojaOnline}
 
              style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='sitescorporativos' />
 
@@ -47,7 +43,7 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <Image src={Estetica} 
+            <Image src={LojaOnline} 
 
             style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='estetica' />
 
