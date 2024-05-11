@@ -41,7 +41,7 @@ function SlideCarousel() {
             <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=2' />
           </Card>
             <Card>
-            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=2' />
+            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=3' />
           </Card>
         </Carousel>
       </Box>
