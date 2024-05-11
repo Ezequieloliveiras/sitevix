@@ -1,7 +1,7 @@
 // import { register } from 'swiper/element/bundle'
 // import { Swiper, SwiperSlide } from 'swiper/react'
 import Carousel from 'react-material-ui-carousel'
-
+import Image from 'next/image'
 
 // import 'swiper/css'
 // import 'swiper/css/pagination'
@@ -9,10 +9,9 @@ import Carousel from 'react-material-ui-carousel'
 // import 'swiper/css/autoplay'
 // import './carousel.css'
 
-// import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
-// import Estetica from '../../../public/images/estetica.avif'
-// import LojaOnline from '../../../public/images/lojaonline.avif'
-// import Image from 'next/image'
+import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
+import Estetica from '../../../public/images/estetica.avif'
+import LojaOnline from '../../../public/images/lojaonline.avif'
 import { Box, Card, CardMedia } from '@mui/material'
 
 // register()
@@ -32,18 +31,29 @@ function SlideCarousel() {
     <div className='container'>
 
 
-      <Box sx={{height:'500px'}} >
+      <Box sx={{ height: '500px' }}>
         <Carousel autoPlay>
-          <Card>
-            <CardMedia  sx={{height:'500px'}} image='https://source.unsplash.com/random?a=1' title= 'imagem'/>
-          </Card>
-          <Card>
-            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=2' />
-          </Card>
-            <Card>
-            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=3' />
-          </Card>
+
+          <div style={{ height: '500px' }}>
+
+            <Image src={SitesCorporativos} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+
+          </div>
+
+          <div style={{ height: '500px' }}>
+
+            <Image src={Estetica} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+
+          </div>
+
+          <div style={{ height: '500px' }}>
+
+            <Image src={LojaOnline} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+
+          </div>
+
         </Carousel>
+
       </Box>
 
 
