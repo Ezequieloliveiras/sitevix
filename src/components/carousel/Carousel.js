@@ -39,7 +39,7 @@ function SlideCarousel() {
 
 
       <StyledBox >
-        <Carousel sx={{height:'500px'}} autoPlay>
+        <Carousel sx={{ height: '500px' }} autoPlay>
 
           <CardSlide >
 
@@ -51,17 +51,17 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <ImageTeste src={LojaOnline} 
+            <ImageTeste src={LojaOnline}
 
-            style={{ width: '100%', height: '100%',  }} alt='estetica' />
+              layout='responsive' alt='estetica' />
 
           </CardSlide>
 
           <CardSlide >
 
-            <ImageTeste src={LojaOnline} 
+            <ImageTeste src={LojaOnline}
 
-            style={{ width: '100%', height: 'auto',  }} alt='lojaonline' />
+              layout='responsive' alt='lojaonline' />
 
           </CardSlide>
 
