@@ -5,6 +5,8 @@ import CardMedia from '@mui/material/CardMedia'
 import { useState } from 'react'
 import styled from 'styled-components'
 
+import Image from 'next/image'
+import Arte from '../../../../public/images/arte.png'
 
 const BoxImage = styled(Box)`
     position: absolute;
@@ -48,13 +50,13 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description"
             >
                 <BoxImage>
-              
-                    <CardMedia
-                        component="img"
-                        height="auto"
-                        src="https://i.imgur.com/wuxDWOn.png"
-                        alt="green iguana"
+
+                    <Image
+                        layout='responsive'
+                        src={Arte}
+                        alt="site de arte"
                     />
+                    
                 </BoxImage>
             </Modal>
         </div>

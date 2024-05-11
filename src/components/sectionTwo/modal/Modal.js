@@ -2,8 +2,9 @@ import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
-import CardMedia from '@mui/material/CardMedia'
 import styled from 'styled-components'
+import Image from 'next/image'
+import Architecture from '../../../../public/images/architecture.png'
 
 
 const BoxImage = styled(Box)`
@@ -48,12 +49,12 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description"
             >
                 <BoxImage>
-              
-                    <CardMedia
-                        component="img"
-                        height="auto"
-                        src="https://i.imgur.com/9ogyyKs.png"
-                        alt="green iguana"
+
+
+                    <Image
+                        layout='responsive'
+                        src={Architecture}
+                        alt="Arquitetura"
                     />
                 </BoxImage>
             </Modal>

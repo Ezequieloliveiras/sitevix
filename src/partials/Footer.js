@@ -1,92 +1,112 @@
 import {
-  Container,
-  Grid,
   Typography
 } from '@mui/material'
 
 import {
-  StyledBoxFooter,
-  StyledList,
-  StyledLink,
+  ConatinerFooter,
+  BoxContent,
+  ContentFooter,
+  TitleFooter,
+  Description,
+  BoxFooter,
+  List,
+  LinkFooter,
+  StyledIframe,
+  ContainerMap,
+  Info,
 } from './StylesFooter'
-
 
 const Footer = () => {
 
   return (
 
-    <StyledBoxFooter >
+    <BoxFooter>
 
-      <Container>
+      <ConatinerFooter>
 
-        <Grid container spacing={3}>
+        <BoxContent container spacing={3}>
 
-          <Grid item xs={12} sm={4}>
+          <ContentFooter item xs={12} sm={4}>
 
-            <Typography variant="h6">Contato do Criador</Typography>
+            <TitleFooter variant="h6" >Contato</TitleFooter>
 
-            <StyledList >
+            <Description>
 
-              <Typography>Email: ezequieloliveiraes@outlook.com</Typography>
+              <Description>Email: ezequieloliveiraes@outlook.com</Description>
 
-              <Typography>Telefone: (27) 99733-7338</Typography>
+              <Description>Telefone: +55 27 99733-7338</Description>
 
-              <Typography>Endereço: Vitória-ES</Typography>
 
-            </StyledList>
+            </Description>
 
-          </Grid>
+          </ContentFooter>
 
-          <Grid item xs={12} sm={4}>
+          <ContentFooter item xs={12} sm={4}>
 
-            <Typography variant="h6">Sobre</Typography>
+            <TitleFooter variant="h6">Sobre</TitleFooter>
 
-            <Typography>
+            <Description>
 
               Somos apaixonados por transformar ideias em realidade digital. Como criador de sites, nosso objetivo é ajudar indivíduos e empresas a alcançarem sua presença online de forma impactante e eficaz.
 
-            </Typography>
+            </Description>
 
-          </Grid>
+          </ContentFooter>
 
-          <Grid item xs={12} sm={4}>
+          <ContentFooter item xs={12} sm={4} >
 
-            <Typography variant="h6">Saiba Mais</Typography>
+            <TitleFooter variant="h6">Saiba Mais</TitleFooter>
 
-            <StyledList>
+            <List>
 
-              <Typography>
+              <Description>
 
-                <StyledLink  >
+                <LinkFooter>
 
                   Termos de Serviço
 
-                </StyledLink>
+                </LinkFooter>
 
-              </Typography>
+              </Description>
 
-              <Typography>
+              <Description>
 
-                <StyledLink >
+                <LinkFooter>
 
                   Política de Privacidade
 
-                </StyledLink>
+                </LinkFooter>
 
-              </Typography>
+              </Description>
 
-            </StyledList>
+            </List>
 
-          </Grid>
+          </ContentFooter>
 
-        </Grid>
+        </BoxContent>
 
-      </Container>
+      </ConatinerFooter>
 
-    </StyledBoxFooter>
+      <ContainerMap>
+
+        <StyledIframe
+
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239519.1999118129!2d-40.32175681504925!3d-20.280079037509164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5d85374ee9%3A0x97595e7ea70ed809!2zVml0w7NyaWEsIEVT!5e0!3m2!1spt-BR!2sbr!4v1715382117162!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='localização'>
+
+        </StyledIframe>
+
+      </ContainerMap>
+
+      <Info>
+
+      © 2024 Site Vix - Todos os direitos reservados.
+
+      </Info>
+
+    </BoxFooter>
 
   )
-  
+
 }
 
 export default Footer

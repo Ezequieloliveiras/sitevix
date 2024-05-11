@@ -1,39 +1,43 @@
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-
 import ModalImage from '../modal/Modal'
+import Image from 'next/image'
+import Architecture from '../../../../public/images/architecture.png'
+
+import { Box } from './StylesCards'
 
 export default function ActionAreaCard() {
+
   return (
 
+    <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
+      <Box>
 
-    <Card sx={{ maxWidth: 345, margin: '5px' }}>
-
-        <CardMedia
-          component="img"
-          height="auto"
-          src="https://i.imgur.com/9ogyyKs.png"
-          alt="green iguana"
+        <Image
+          layout='responsive'
+          src={Architecture}
+          alt="Arquitetura"
         />
 
-        <CardContent >
+      </Box>
 
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
+      <CardContent >
 
-            Sites Corporativos
+        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
 
-          </Typography>
+          Sites Corporativos
 
-          <Typography color="text.secondary">
+        </Typography>
 
-            Destaque a sua marca e alcance um público global com um site corporativo profissional.
+        <Typography color="text.secondary">
 
-          </Typography>
+          Destaque a sua marca e alcance um público global com um site corporativo profissional.
 
-        </CardContent>
-      
+        </Typography>
+
+      </CardContent>
+
       <ModalImage />
 
     </Card>

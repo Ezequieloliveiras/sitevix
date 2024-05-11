@@ -5,6 +5,9 @@ import Modal from '@mui/material/Modal'
 import CardMedia from '@mui/material/CardMedia'
 import styled from 'styled-components'
 
+import Loja from '../../../../public/images/loja.png'
+import Image from 'next/image'
+
 const BoxImage = styled(Box)`
     position: absolute;
     top: 50%;
@@ -46,12 +49,11 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description"
             >
                 <BoxImage>
-              
-                    <CardMedia
-                        component="img"
-                        height="auto"
-                        src="https://i.imgur.com/Gw0oBSf.png"
-                        alt="green iguana"
+
+                    <Image
+                        layout='responsive'
+                        src={Loja}
+                        alt="loja online"
                     />
                 </BoxImage>
             </Modal>

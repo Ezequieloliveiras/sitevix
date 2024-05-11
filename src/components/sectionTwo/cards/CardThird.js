@@ -1,38 +1,41 @@
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import Modal from '../modal/ModalThird'
+import Image from 'next/image'
+import Arte from '../../../../public/images/arte.png'
+import {Box} from './StylesCards'
 
 export default function ActionAreaCard() {
   return (
 
-    <Card sx={{ maxWidth: 345, margin: '5px' }}>
-
-        <CardMedia
-          component="img"
-          height="auto"
-          src="https://i.imgur.com/wuxDWOn.png"
-          alt="green iguana"
+    <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
+      <Box>
+        <Image
+          layout='responsive'
+          src={Arte}
+          alt="site de arte"
         />
 
-        <CardContent >
+      </Box>
 
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
+      <CardContent >
 
-            Portfólios de Arte
-            
-          </Typography>
+        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
 
-          <Typography color="text.secondary">
+          Portfólios de Arte
 
-            Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
+        </Typography>
 
-          </Typography>
+        <Typography color="text.secondary">
 
-        </CardContent>
+          Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
 
-      <Modal/>
+        </Typography>
+
+      </CardContent>
+
+      <Modal />
 
     </Card>
 
