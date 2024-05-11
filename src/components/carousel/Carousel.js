@@ -39,7 +39,7 @@ function SlideCarousel() {
 
 
       <StyledBox >
-        <Carousel sx={{height:'500px'}} autoPlay={false}>
+        <Carousel sx={{height:'500px'}} autoPlay>
 
           <CardSlide >
 
