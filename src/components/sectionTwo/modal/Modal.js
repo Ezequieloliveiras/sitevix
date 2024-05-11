@@ -56,7 +56,7 @@ export default function BasicModal() {
 
 
                     <Image
-                        layout='responsive'
+                        style={{width:'100%', height:'auto'}}
                         src={Architecture}
                         alt="Arquitetura"
                     />

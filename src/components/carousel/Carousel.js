@@ -38,11 +38,7 @@ const data = [
 
             <SwiperSlide key={item.id} className='swiper-slider'>
 
-              <div className="slider-item-container">
-
                 <Image src={item.image} alt='sites' className='slider-item' />
-
-              </div>
 
             </SwiperSlide>
 

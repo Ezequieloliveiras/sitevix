@@ -56,7 +56,7 @@ export default function BasicModal() {
                 <BoxImage>
 
                     <Image
-                        layout='responsive'
+                        style={{width:'100%', height:'auto'}}
                         src={Arte}
                         alt="site de arte"
                     />

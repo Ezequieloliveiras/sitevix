@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <Grid>
 
-      <Grid item xs={25}>
+      <div>
 
         <Carousel />
 
-      </Grid>
+      </div>
 
       <SectionOne />
 
