@@ -51,7 +51,7 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <Image src={LojaOnline} 
+            <ImageTeste src={LojaOnline} 
 
             style={{ width: '100%', height: '100%',  }} alt='estetica' />
 
@@ -59,7 +59,7 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <Image src={LojaOnline} 
+            <ImageTeste src={LojaOnline} 
 
             style={{ width: '100%', height: 'auto',  }} alt='lojaonline' />
 
