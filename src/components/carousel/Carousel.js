@@ -7,9 +7,9 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
 import './carousel.css'
 
-import SitesCorporativos from '../../../public/images/sitescorporativos.png'
-import Estetica from '../../../public/images/estetica.png'
-import LojaOnline from '../../../public/images/lojaonline.png'
+import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
+import Estetica from '../../../public/images/estetica.avif'
+import LojaOnline from '../../../public/images/lojaonline.avif'
 import Image from 'next/image'
 
 register()
@@ -38,7 +38,7 @@ const data = [
 
             <SwiperSlide key={item.id} className='swiper-slider'>
 
-                <Image src={item.image} alt='sites' className='slider-item' />
+                <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high'/>
 
             </SwiperSlide>
 
