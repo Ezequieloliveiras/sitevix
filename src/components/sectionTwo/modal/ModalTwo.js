@@ -55,6 +55,7 @@ export default function BasicModal() {
                 <BoxImage>
 
                     <Image
+                        quality={100}
                         layout='responsive'
                         src={Loja}
                         alt="loja online"
