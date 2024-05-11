@@ -1,74 +1,50 @@
-import { register } from 'swiper/element/bundle'
-// import { Swiper, SwiperSlide } from 'swiper/react'
-import Carousel from 'react-material-ui-carousel'
+import React, { useState, useEffect } from 'react';
+import Carousel from 'react-material-ui-carousel';
+import { Box, CircularProgress } from '@mui/material'; // Importe os componentes necessários do Material-UI
 
+function MyCarousel() {
+  const [loading, setLoading] = useState(true);
 
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// import 'swiper/css/scrollbar'
-// import 'swiper/css/autoplay'
-// import './carousel.css'
-
-// import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
-// import Estetica from '../../../public/images/estetica.avif'
-// import LojaOnline from '../../../public/images/lojaonline.avif'
-// import Image from 'next/image'
-import { Box, Card, CardMedia } from '@mui/material'
-
-register()
-
-function SlideCarousel() {
-
-  // const data = [
-
-  //   { id: '3', image: LojaOnline, title: 'Blogs' },
-  //   { id: '2', image: Estetica, title: 'Lojas Online' },
-  //   { id: '1', image: SitesCorporativos, title: 'Sites Corporativos' },
-
-  // ]
+  // Simulação de carregamento de dados
+  useEffect(() => {
+    // Aqui você pode fazer chamadas para carregar os dados necessários
+    // Por enquanto, apenas simulamos um atraso para demonstrar o indicador de carregamento
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Simula 2 segundos de carregamento
+  }, []);
 
   return (
-
-    <div className='container'>
-
-
-      <Box sx={{height:'500px'}}>
+    <Box sx={{ position: 'relative', height: '500px' }}>
+      {loading && ( // Se estiver carregando, exibe o indicador de carregamento
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          <CircularProgress />
+        </Box>
+      )}
+      {/* Exibe o Carousel apenas quando não estiver carregando */}
+      {!loading && (
         <Carousel autoPlay>
-          <Card>
-            <CardMedia  sx={{height:'500px'}} image='https://source.unsplash.com/random?a=1' title= 'imagem'/>
-          </Card>
-          <Card>
-            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=2' />
-          </Card>
-            <Card>
-            <CardMedia sx={{height:'500px'}} image='https://source.unsplash.com/random?a=3' />
-          </Card>
+          <div>
+            {/* Seus slides aqui */}
+            <img src="https://source.unsplash.com/random?a=1" alt="slide1" style={{ height: '500px', width: '100%', objectFit: 'cover' }} />
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/random?a=2" alt="slide2" style={{ height: '500px', width: '100%', objectFit: 'cover' }} />
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/random?a=3" alt="slide3" style={{ height: '500px', width: '100%', objectFit: 'cover' }} />
+          </div>
         </Carousel>
-      </Box>
-
-
-      {/* 
-        <Swiper 
-          className='swiper-slider'
-          slidesPerView={1}
-          pagination={{clickable: true}}
-          autoplay={true}
-          >
-          {data.map((item) => (
-
-            <SwiperSlide key={item.id} className='swiper-slider'>
-
-                <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high'/>
-
-            </SwiperSlide>
-
-          ))}
-
-        </Swiper> */}
-
-    </div>
-
-  )
+      )}
+    </Box>
+  );
 }
 
-export default SlideCarousel
+export default MyCarousel;
