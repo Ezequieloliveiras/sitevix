@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SitesCorporativos from '../../../public/images/sitescorporativos.png'
 import Estetica from '../../../public/images/estetica.png'
 import LojaOnline from '../../../public/images/lojaonline.png'
-import { Box } from '@mui/material'
+import { Box, Card } from '@mui/material'
 import styled from 'styled-components'
 
 const StyledBox = styled(Box)`
@@ -15,9 +15,17 @@ height: 500px;
 `
 
 const CardSlide = styled.div`
-height: 500px ;
+height: 500px;
+
+
   @media (max-width:768px) {
-    height: 300px;
+    max-height: 200px;
+  }
+`
+
+const ImageTeste = styled(Image)`
+  @media (min-width:769px) {
+    max-height:100%;
   }
 `
 
@@ -31,13 +39,13 @@ function SlideCarousel() {
 
 
       <StyledBox >
-        <Carousel autoPlay>
+        <Carousel sx={{height:'500px'}} autoPlay={false}>
 
           <CardSlide >
 
-            <Image src={LojaOnline}
+            <ImageTeste src={LojaOnline}
 
-             style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='sitescorporativos' />
+              layout='responsive' alt='sitescorporativos' />
 
           </CardSlide>
 
@@ -45,7 +53,7 @@ function SlideCarousel() {
 
             <Image src={LojaOnline} 
 
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='estetica' />
+            style={{ width: '100%', height: '100%',  }} alt='estetica' />
 
           </CardSlide>
 
@@ -53,7 +61,7 @@ function SlideCarousel() {
 
             <Image src={LojaOnline} 
 
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt='lojaonline' />
+            style={{ width: '100%', height: 'auto',  }} alt='lojaonline' />
 
           </CardSlide>
 
