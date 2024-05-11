@@ -7,15 +7,20 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/autoplay'
 import './carousel.css'
 
+import SitesCorporativos from '../../../public/CarouselImages/sitescorporativos.png'
+import Estetica from '../../../public/CarouselImages/estetica.png'
+import LojaOnline from '../../../public/CarouselImages/lojaonline.png'
+import Image from 'next/image'
+
 register()
 
 function Carousel() {
 
 const data = [
 
-    {id: '1', image: 'https://i.imgur.com/eXpeNf2.png', title: 'Sites Corporativos'},
-    {id: '2', image: 'https://i.imgur.com/bWLTwdI.png', title:'Lojas Online'},
-    {id: '3', image: 'https://i.imgur.com/CzA6DD2.png', title:'Blogs'},
+    {id: '1', image: SitesCorporativos, title: 'Sites Corporativos'},
+    {id: '2', image: Estetica, title:'Lojas Online'},
+    {id: '3', image: LojaOnline, title:'Blogs'},
 
 ]
 
@@ -35,7 +40,7 @@ const data = [
 
               <div className="slider-item-container">
 
-                <img src={item.image} alt='slider' className='slider-item' />
+                <Image src={item.image} alt='sites' className='slider-item' />
 
               </div>
 
