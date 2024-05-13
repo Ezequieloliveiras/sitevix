@@ -8,7 +8,7 @@ import { Box, Card } from '@mui/material'
 import styled from 'styled-components'
 
 const StyledBox = styled(Box)`
-height: 500px;
+
 @media (max-width:768px) {
     height: 300px;
   }
@@ -24,6 +24,8 @@ height: 500px;
 `
 
 const ImageTeste = styled(Image)`
+object-fit: cover;
+height:100%;
   @media (min-width:769px) {
     max-height:100%;
   }
@@ -39,11 +41,11 @@ function SlideCarousel() {
 
 
       <StyledBox >
-        <Carousel sx={{ height: '500px' }} autoPlay>
+        <Carousel sx={{ height: 'auto' }} autoPlay>
 
           <CardSlide >
 
-            <ImageTeste src={LojaOnline}
+            <ImageTeste src={SitesCorporativos}
 
               layout='responsive' alt='sitescorporativos' />
 
@@ -51,7 +53,7 @@ function SlideCarousel() {
 
           <CardSlide >
 
-            <ImageTeste src={LojaOnline}
+            <ImageTeste src={Estetica}
 
               layout='responsive' alt='estetica' />
 
