@@ -92,7 +92,10 @@ const StyledTitleSection = styled.h1`
       text-align: center;
 
       @media (max-width: 600px) {
-          font-size: 2rem;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 2rem;
       }
     }
 `
@@ -116,6 +119,10 @@ const StyledParagraphy= styled.p`
       font-size: 1.2em;
       line-height: 1.6;
       text-align: center;
+      @media (max-width: 768px) {
+        margin-bottom: 0px;
+
+      }
     }
 `
 
