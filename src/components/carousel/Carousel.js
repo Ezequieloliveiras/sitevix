@@ -9,8 +9,8 @@ import 'swiper/css'
  import './carousel.css'
 
 import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
- import Estetica from '../../../public/images/estetica.avif'
-import LojaOnline from '../../../public/images/lojaonline.png'
+import Estetica from '../../../public/images/estetica.avif'
+import LojaOnline from '../../../public/images/lojaonline.avif'
 import Image from 'next/image'
 
 register()
