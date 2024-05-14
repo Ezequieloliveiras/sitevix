@@ -19,10 +19,10 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
+        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00'}}>
           Sites Corporativos
         </Typography>
-        <Typography color="text.secondary">
+        <Typography color="text.secondary" sx={{ textAlign: 'justify',letterSpacing: '1px' }}>
           Destaque a sua marca e alcance um público global com um site corporativo profissional.
         </Typography>
       </CardContent>

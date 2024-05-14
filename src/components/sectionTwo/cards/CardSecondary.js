@@ -20,7 +20,7 @@ export default function ActionAreaCard() {
         <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
           Lojas Online
         </Typography>
-        <Typography color="text.secondary">
+        <Typography color="text.secondary"  sx={{ textAlign: 'justify',letterSpacing: '1px' }}>
           Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
         </Typography>
       </CardContent>

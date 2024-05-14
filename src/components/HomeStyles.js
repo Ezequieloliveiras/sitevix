@@ -29,7 +29,7 @@ const StyledTitleOne = styled.text`
       text-align: center;
 
       @media (max-width: 600px) {
-          font-size: 2rem;
+          font-size: 1.4rem;
           margin-bottom: 30px;
       }
     }
@@ -42,6 +42,13 @@ const StyledParagraphyOne = styled.h3`
       font-weight: 400;
       margin-bottom: 30px;
       text-align: center;
+      @media (max-width: 600px) {
+          font-size: 1rem;
+          text-align: justify;
+          letter-spacing: 1px;
+          margin-bottom: 40px;
+          margin-top: 40px;
+      }
     }
 `
 const StyledButtonGo = styled.button`
@@ -55,8 +62,10 @@ const StyledButtonGo = styled.button`
       cursor: pointer;
       
       @media (max-width: 600px) {
-          
-          margin-bottom: 30px;
+        padding: 8px 8px;
+        margin-bottom: 0px;
+        font-size: 16px;
+
       }
     }
 `
@@ -97,7 +106,7 @@ const StyledTitleSection = styled.p`
         margin-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        font-size: 2rem;
+        font-size: 20px;
       }
     }
 `
@@ -109,7 +118,7 @@ const StyledSubtitle= styled.p`
       text-align: center;
 
       @media (max-width: 600px) {
-          font-size: 1.5rem;
+          font-size: 1rem;
       }
     }
 `
@@ -122,7 +131,9 @@ const StyledParagraphy= styled.p`
       text-align: center;
       @media (max-width: 768px) {
         margin-bottom: 0px;
-
+        font-size: 1em;
+        text-align: justify;
+        letter-spacing: 1px;
       }
     }
 `

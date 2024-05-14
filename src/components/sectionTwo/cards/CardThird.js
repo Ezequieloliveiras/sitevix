@@ -20,7 +20,7 @@ export default function ActionAreaCard() {
         <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
           Portfólios de Arte
         </Typography>
-        <Typography color="text.secondary">
+        <Typography color="text.secondary"  sx={{ textAlign: 'justify', }}>
           Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
         </Typography>
       </CardContent>
