@@ -90,7 +90,6 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
         ))}
       </List>
-
     </Box>
   )
 

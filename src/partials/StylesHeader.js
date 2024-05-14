@@ -7,17 +7,13 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 const StyledAppBar = styled(AppBar)`
-
     && {
         background-color:#fff;
         display:flex;
         justify-content:center;
     }
-
 `
-
 const StyledToolbar = styled(Toolbar)`
-
     && {
         display: flex;
         justify-content: center;
@@ -26,7 +22,6 @@ const StyledToolbar = styled(Toolbar)`
     }
 `
 const StyledLinkLogo= styled(Link)`
-
     && {
         display: flex;
         font-family: monospace;
@@ -38,7 +33,6 @@ const StyledLinkLogo= styled(Link)`
     }
 `
 const StyledTypographyLogo = styled(Typography)`
-
     && {
         font-weight: bold;
         font-size: 30px;
@@ -46,16 +40,13 @@ const StyledTypographyLogo = styled(Typography)`
     }
 `
 const StyledTypographyPartialLogo = styled(Typography)`
-
     && {
         font-weight: bold;
         color: #ef6c00;
         font-size: 30px;
     }
 `
-
 const StyledBoxButtons = styled(Box)`
-
     && {
         flex-grow: 1;
         display: flex;
@@ -64,14 +55,11 @@ const StyledBoxButtons = styled(Box)`
         }
     }
 `
-
 const StyledBoxButtonsMenuIcon = styled(Button)`
-
     && {
         color: #ef6c00;
     }
 `
-
 const StyledBoxButtonsMenu = styled(Button)`
 
     && {
@@ -80,9 +68,7 @@ const StyledBoxButtonsMenu = styled(Button)`
         text-transform: none;
     }
 `
-
 const StyledBoxContent = styled(Box)`
-
     && {
         flex-grow: 1;
         display: none; /* Por padrão, esconde em telas extra pequenas (xs) */
@@ -93,7 +79,6 @@ const StyledBoxContent = styled(Box)`
         }
     }
 `
-
 export {
     StyledAppBar,
     StyledToolbar,

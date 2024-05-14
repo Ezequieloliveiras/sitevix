@@ -15,62 +15,34 @@ import {
 
 } from './StylesHeader'
 
-
 function ResponsiveAppBar() {
-
     return (
-
         <StyledAppBar position="static">
-
             <StyledToolbar disableGutters>
-
                 <StyledBoxButtons>
-
-                    <Drawer />
-
+                    <Drawer/>
                 </StyledBoxButtons>
-
-                <StyledLinkLogo href="/" >
-
+                <StyledLinkLogo href="/">
                     <StyledTypographyLogo >SITE</StyledTypographyLogo>
-
                     <StyledTypographyPartialLogo>VIX</StyledTypographyPartialLogo>
-
                 </StyledLinkLogo>
-
-
                 <StyledBoxContent>
-
                     <StyledBoxButtonsMenu href='/'>
-
                         Inicío
-
                     </StyledBoxButtonsMenu>
-
                     <StyledBoxButtonsMenu href='/pages/contact'>
-
                         Contato
-
                     </StyledBoxButtonsMenu>
-
                     <StyledBoxButtonsMenu href='/pages/support'>
-
                         Suporte e Planos
-
                     </StyledBoxButtonsMenu>
-
                     <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>
-
                         <Link href="https://api.whatsapp.com/send?phone=27997337338">
                             <WhatsAppIcon sx={{ color: 'green' }} />
                         </Link>
-
                     </Box>
-
                 </StyledBoxContent>
-
             </StyledToolbar>
-
         </StyledAppBar>
     )
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Container = styled.div`
   min-height: auto;
@@ -17,27 +17,23 @@ const Container = styled.div`
   @media (min-width: 820px) {
     width: 400px;
   }
-`;
-
+`
 const Title = styled.h1`
   margin-bottom: 14px;
-`;
-
+`
 const Form = styled.form`
   max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
-`;
-
+`
 const Input = styled.input`
   margin-bottom: 14px;
   height: 34px;
   border-radius: 4px;
   border: 0;
   padding: 0 8px;
-`;
-
+`
 const TextArea = styled.textarea`
   margin-bottom: 14px;
   border-radius: 4px;
@@ -46,8 +42,7 @@ const TextArea = styled.textarea`
   height: 94px;
   resize: none;
   font-family: Arial, sans-serif;
-`;
-
+`
 const Button = styled.input`
   height: 34px;
   border-radius: 4px;
@@ -61,7 +56,7 @@ const Button = styled.input`
     background-color: #f58020;
     transform: scale(1.01);
   }
-`;
+`
 
 export {
     Container,

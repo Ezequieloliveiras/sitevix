@@ -1,55 +1,34 @@
-import Carousel from 'react-material-ui-carousel'
-import Image from 'next/image'
 import SitesCorporativos from '../../../public/images/sitescorporativos.png'
 import Estetica from '../../../public/images/estetica.png'
 import LojaOnline from '../../../public/images/lojaonline.png'
-import { Box } from '@mui/material'
-import styled from 'styled-components'
 
-const StyledBox = styled(Box)`
-
-@media (max-width:768px) {
-    height: 180px;
-  }
-`
-const CardSlide = styled.div`
-  height: 500px;
-
-
-  @media (max-width:768px) {
-    max-height: 200px;
-  }
-`
-
-const ImageTeste = styled(Image)`
-  object-fit: cover;
-  height:100%;
-  @media (min-width:769px) {
-    max-height:100%;
-  }
-`
+import {
+  StyledBox,
+  CarouselSlide,
+  CardSlide,
+  ImageTeste,
+} from './StylesCarousel'
 
 function SlideCarousel() {
   return (
     <div className='container'>
-      <StyledBox >
-        <Carousel sx={{ height: 'auto' }} autoPlay>
-          <CardSlide >
+      <StyledBox>
+        <CarouselSlide autoPlay>
+          <CardSlide>
             <ImageTeste src={SitesCorporativos}
-              layout='responsive' alt='empresa' />
+              layout='responsive' alt='empresa'/>
           </CardSlide>
           <CardSlide>
             <ImageTeste src={Estetica}
-              layout='responsive' alt='estetica' />
+              layout='responsive' alt='estetica'/>
           </CardSlide>
-          <CardSlide >
+          <CardSlide>
             <ImageTeste src={LojaOnline}
-              layout='responsive' alt='lojaonline' />
+              layout='responsive' alt='lojaonline'/>
           </CardSlide>
-        </Carousel>
+        </CarouselSlide>
       </StyledBox>
     </div>
-
   )
 }
 

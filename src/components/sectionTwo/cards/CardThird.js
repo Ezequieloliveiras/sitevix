@@ -8,7 +8,6 @@ import {Box} from './StylesCards'
 
 export default function ActionAreaCard() {
   return (
-
     <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
       <Box>
         <Image
@@ -16,27 +15,16 @@ export default function ActionAreaCard() {
           src={Arte}
           alt="site de arte"
         />
-
       </Box>
-
-      <CardContent >
-
+      <CardContent>
         <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
-
           Portfólios de Arte
-
         </Typography>
-
         <Typography color="text.secondary">
-
           Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
-
         </Typography>
-
       </CardContent>
-
-      <Modal />
-
+      <Modal/>
     </Card>
 
   )

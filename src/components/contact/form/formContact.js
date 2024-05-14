@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-
-import emailjs from '@emailjs/browser';
-
-import Message from './Success';
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
+import Message from './Success'
 
 import {
   Container,
@@ -14,40 +12,40 @@ import {
 } from './StylesForm'
 
 const App = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (name === '' || email === '' || message === '') {
-      alert('Preencha todos os campos necessários!');
-      return;
+      alert('Preencha todos os campos necessários!')
+      return
     }
 
     const templateParams = {
       from_name: name,
       message: message,
       email: email,
-    };
+    }
 
     emailjs.send('service_rewwzv9', 'template_shmj468', templateParams, '3AEl9b3Rkc7PXJki-')
     .then(
       (response) => {
-        console.log('email enviado', response.status, response.text);
-        setShowSuccessMessage(true);
-        setTimeout(() => setShowSuccessMessage(false), 5000); // Esconde a mensagem após 5 segundos
-        setName('');
-        setEmail('');
-        setMessage('');
+        console.log('email enviado', response.status, response.text)
+        setShowSuccessMessage(true)
+        setTimeout(() => setShowSuccessMessage(false), 5000) // Esconde a mensagem após 5 segundos
+        setName('')
+        setEmail('')
+        setMessage('')
       },
       (err) => {
-        console.log('Erro: ', err);
+        console.log('Erro: ', err)
       }
-    );
-  };
+    )
+  }
 
   return (
     <Container>
@@ -74,7 +72,7 @@ const App = () => {
       </Form>
       <Message visible={showSuccessMessage} />
     </Container>
-  );
-};
+  )
+}
 
-export default App;
+export default App

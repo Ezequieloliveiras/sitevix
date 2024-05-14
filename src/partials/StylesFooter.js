@@ -7,7 +7,6 @@ import {
   Typography
 } from '@mui/material'
 
-
 const ConatinerFooter = styled(Container)`
 && {
   display:flex;
@@ -29,7 +28,6 @@ const ContentFooter = styled(Grid)`
   align-items: center;
 }
 `
-
 const TitleFooter = styled(Typography)`
 && {
   text-align:left;
@@ -48,7 +46,6 @@ const Description = styled(Grid)`
   }
 }
 `
-
 const BoxFooter = styled(Box)`
 
     && {
@@ -85,13 +82,11 @@ const StyledIframe = styled.iframe`
 }
 
 `
-
 const ContainerMap = styled.div`
   width: 100%;
   text-align: center;
   margin-top: 40px;
 `
-
 const Info = styled.div`
   text-align: center;
   font-size: 10px;

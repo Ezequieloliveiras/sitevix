@@ -10,16 +10,18 @@ const StyledGridSectionOne = styled(Grid)`
       align-items: center;
       padding: 50px 10px 50px 10px;
       text-align: center;
+      @media (max-width: 500px) {
+        height: 400px;
+        padding: 0px 10px 0px 10px;
+      }
     }
 `
-
 const StyledBoxSectionOne = styled(Box)`
     && {
       max-width: 800px;
       margin: 0 auto;
     }
 `
-
 const StyledTitleOne = styled.h1`
     && {
       font-size: 2.8em;
@@ -29,6 +31,7 @@ const StyledTitleOne = styled.h1`
 
       @media (max-width: 600px) {
           font-size: 2rem;
+          margin-bottom: 30px;
       }
     }
 `
@@ -42,7 +45,6 @@ const StyledParagraphyOne = styled.h3`
       text-align: center;
     }
 `
-
 const StyledButtonGo = styled.button`
     && {
       padding: 15px 30px;
@@ -55,7 +57,6 @@ const StyledButtonGo = styled.button`
       transition: background-color 0.3s ease;
     }
 `
-
 const StyledGridSectionTwo = styled(Grid)`
     && {
       background-color: #f9f9f9;
@@ -70,8 +71,7 @@ const StyledBoxTitle = styled(Box)`
         height: 202px;
     }
   }
-`;
-
+`
 const StyledBoxSection = styled(Box)`
     && {
       max-width: 1200px;
@@ -81,7 +81,6 @@ const StyledBoxSection = styled(Box)`
         }
     }
 `
-
 const StyledTitleSection = styled.h1`
     && {
       font-size: 2.6em;
@@ -111,7 +110,6 @@ const StyledSubtitle= styled.h3`
       }
     }
 `
-
 const StyledParagraphy= styled.p`
     && {
       margin-bottom: 20px;
@@ -125,7 +123,6 @@ const StyledParagraphy= styled.p`
       }
     }
 `
-
 const StyledBoxImage= styled.div`
     && {
       width: 100%;
@@ -138,23 +135,23 @@ const StyledBoxImage= styled.div`
       }
     }
 `
-
 const StyledGridSectionTree = styled(Grid)`
     && {
       background-color: #fff;
       min-height: 580px;
       padding: 50px 0;
       text-align: center;
+      @media (max-width: 500px) {
+        height: auto;
+      }
     }
 `
-
 const StyledImage = styled.img`
     && {
       width: 100%;
       height: auto;      
     }
 `
-
 export{
     StyledGridSectionOne,
     StyledBoxSectionOne,
