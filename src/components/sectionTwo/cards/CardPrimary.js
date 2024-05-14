@@ -15,6 +15,7 @@ export default function ActionAreaCard() {
         <Image
           style={{width:'100%', height:'auto'}}
           src={Architecture}
+          priority
           alt="Arquitetura"
         />
       </Box>
