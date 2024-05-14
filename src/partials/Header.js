@@ -27,13 +27,13 @@ function ResponsiveAppBar() {
                     <StyledTypographyPartialLogo>VIX</StyledTypographyPartialLogo>
                 </StyledLinkLogo>
                 <StyledBoxContent>
-                    <StyledBoxButtonsMenu href='/'>
+                    <StyledBoxButtonsMenu href='/' id='botaoInicio'>
                         Inicío
                     </StyledBoxButtonsMenu>
-                    <StyledBoxButtonsMenu href='/pages/contact'>
+                    <StyledBoxButtonsMenu href='/pages/contact' id='botaoContato'>
                         Contato
                     </StyledBoxButtonsMenu>
-                    <StyledBoxButtonsMenu href='/pages/support'>
+                    <StyledBoxButtonsMenu href='/pages/support' id='botaoSuporte'>
                         Suporte e Planos
                     </StyledBoxButtonsMenu>
                     <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>

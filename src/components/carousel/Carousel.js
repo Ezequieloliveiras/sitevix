@@ -31,7 +31,6 @@ function SlideCarousel() {
   return (
 
     <div className='container'>
-
       
         <Swiper 
           className='swiper-slider'
