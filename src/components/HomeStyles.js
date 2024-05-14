@@ -46,7 +46,7 @@ const StyledParagraphyOne = styled.h3`
           font-size: 1rem;
           text-align: justify;
           letter-spacing: 1px;
-          margin-bottom: 20px;
+          margin-bottom: 50px;
           margin-top: 20px;
       }
     }
