@@ -22,9 +22,9 @@ function SlideCarousel() {
 
    const data = [
 
+    { id: '1', image: SitesCorporativos, title: 'Sites Corporativos' },
     { id: '3', image: LojaOnline, title: 'Blogs' },
     { id: '2', image: Estetica, title: 'Lojas Online' },
-    { id: '1', image: SitesCorporativos, title: 'Sites Corporativos' },
 
    ]
 
