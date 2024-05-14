@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import Modal from '../modal/ModalThird'
 import Image from "next/legacy/image"
-import Arte from '../../../../public/images/arte.png'
+import Arte from '../../../../public/images/art.avif'
 import {Box} from './StylesCards'
 
 export default function ActionAreaCard() {
@@ -11,7 +11,6 @@ export default function ActionAreaCard() {
     <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
       <Box>
         <Image
-          style={{width:'100%', height:'auto'}}
           src={Arte}
           priority
           alt="site de arte"

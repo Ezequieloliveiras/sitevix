@@ -3,7 +3,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import ModalImage from '../modal/Modal'
-import Architecture from '../../../../public/images/architecture.png'
+import Architecture from '../../../../public/images/architecture.avif'
 import { Box } from './StylesCards'
 
 export default function ActionAreaCard() {
@@ -13,7 +13,6 @@ export default function ActionAreaCard() {
     <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
       <Box>
         <Image
-          style={{width:'100%', height:'auto'}}
           src={Architecture}
           priority
           alt="Arquitetura"

@@ -3,7 +3,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import ModalImage from '../modal/ModalTwo'
-import Loja from '../../../../public/images/loja.png'
+import Loja from '../../../../public/images/loja.avif'
 import { Box } from './StylesCards'
 
 export default function ActionAreaCard() {
@@ -11,7 +11,6 @@ export default function ActionAreaCard() {
     <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0' }}>
       <Box>
         <Image
-          style={{width:'100%', height:'auto'}}
           src={Loja}
           priority
           alt="loja online"

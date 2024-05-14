@@ -6,7 +6,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 import Image from "next/legacy/image"
-import Arte from '../../../../public/images/arte.png'
+import Arte from '../../../../public/images/art.avif'
 
 const BoxImage = styled(Box)`
     position: absolute;
@@ -56,7 +56,6 @@ export default function BasicModal() {
                 <BoxImage>
 
                     <Image
-                        style={{width:'100%', height:'auto'}}
                         src={Arte}
                         alt="site de arte"
                         priority

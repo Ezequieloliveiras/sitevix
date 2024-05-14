@@ -4,8 +4,7 @@ import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
 import styled from 'styled-components'
 import Image from "next/legacy/image"
-import Architecture from '../../../../public/images/architecture.png'
-
+import Architecture from '../../../../public/images/architecture.avif'
 
 const BoxImage = styled(Box)`
     position: absolute;
@@ -22,7 +21,6 @@ const BoxImage = styled(Box)`
         width: 60%;
     }
 `
-
 
 const ButtonModal = styled(Button)`
 
@@ -55,7 +53,7 @@ export default function BasicModal() {
                 <BoxImage>
 
                     <Image
-                        style={{width:'100%', height:'auto'}}
+                        
                         src={Architecture}
                         alt="Arquitetura"
                         priority

@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
-import CardMedia from '@mui/material/CardMedia'
+
 import styled from 'styled-components'
 
-import Loja from '../../../../public/images/loja.png'
+import Loja from '../../../../public/images/loja.avif'
 import Image from "next/legacy/image"
 
 const BoxImage = styled(Box)`
@@ -53,9 +53,7 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description"
             >
                 <BoxImage>
-
                     <Image
-                        style={{width:'100%', height:'auto'}}
                         src={Loja}
                         alt="loja online"
                         priority
