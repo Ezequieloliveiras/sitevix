@@ -43,7 +43,7 @@ function SlideCarousel() {
 
             <SwiperSlide key={item.id} className='swiper-slider'>
 
-                <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high'/>
+                <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high' priority/>
 
             </SwiperSlide>
 
