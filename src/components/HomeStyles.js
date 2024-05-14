@@ -4,7 +4,6 @@ import { Box, Grid } from '@mui/material'
 
 const StyledGridSectionOne = styled(Grid)`
     && {
-      background-color: #fff;
       height: 500px;
       display: flex;
       align-items: center;
