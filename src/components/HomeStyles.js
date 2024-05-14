@@ -21,7 +21,7 @@ const StyledBoxSectionOne = styled(Box)`
       margin: 0 auto;
     }
 `
-const StyledTitleOne = styled.h1`
+const StyledTitleOne = styled.text`
     && {
       font-size: 2.8em;
       color: #757575;
@@ -84,7 +84,7 @@ const StyledBoxSection = styled(Box)`
         }
     }
 `
-const StyledTitleSection = styled.h1`
+const StyledTitleSection = styled.p`
     && {
       font-size: 2.6em;
       color: #757575;
@@ -101,7 +101,7 @@ const StyledTitleSection = styled.h1`
       }
     }
 `
-const StyledSubtitle= styled.h3`
+const StyledSubtitle= styled.p`
     && {
       color: #f57c00;
       font-size: 1.5em;
