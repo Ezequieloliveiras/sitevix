@@ -10,7 +10,7 @@ import 'swiper/css'
 
 import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
  import Estetica from '../../../public/images/estetica.avif'
-import LojaOnline from '../../../public/images/lojaonline.avif'
+import LojaOnline from '../../../public/images/lojaonline.png'
 import Image from 'next/image'
 
 register()
