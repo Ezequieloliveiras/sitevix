@@ -54,7 +54,11 @@ const StyledButtonGo = styled.button`
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      
+      @media (max-width: 600px) {
+          
+          margin-bottom: 30px;
+      }
     }
 `
 const StyledGridSectionTwo = styled(Grid)`
