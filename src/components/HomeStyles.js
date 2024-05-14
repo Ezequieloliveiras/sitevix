@@ -46,8 +46,8 @@ const StyledParagraphyOne = styled.h3`
           font-size: 1rem;
           text-align: justify;
           letter-spacing: 1px;
-          margin-bottom: 40px;
-          margin-top: 40px;
+          margin-bottom: 20px;
+          margin-top: 20px;
       }
     }
 `
