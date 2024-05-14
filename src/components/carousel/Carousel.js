@@ -1,4 +1,4 @@
-// import SitesCorporativos from '../../../public/images/sitescorporativos.png'
+import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
 import Estetica from '../../../public/images/estetica.avif'
 import LojaOnline from '../../../public/images/lojaonline.avif'
 
@@ -19,7 +19,7 @@ function SlideCarousel() {
               alt='estetica' />
           </CardSlide>
           <CardSlide>
-            <ImageTeste src={Estetica} priority
+            <ImageTeste src={SitesCorporativos} priority
               alt='empresa' />
           </CardSlide>
           <CardSlide>
