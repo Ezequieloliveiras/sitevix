@@ -10,9 +10,9 @@ import 'swiper/css'
  import 'swiper/css/autoplay'
  import './carousel.css'
 
-import SitesCorporativos from '../../../public/images/1.avif'
- import Estetica from '../../../public/images/1.avif'
-import LojaOnline from '../../../public/images/1.avif'
+import SitesCorporativos from '../../../public/images/sitescorporativos.avif'
+ import Estetica from '../../../public/images/estetica.avif'
+import LojaOnline from '../../../public/images/lojaonline.avif'
 import Image from 'next/image'
 // import { Box, Card, CardMedia } from '@mui/material'
 
