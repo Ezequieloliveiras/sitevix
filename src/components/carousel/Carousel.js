@@ -1,6 +1,6 @@
-import SitesCorporativos from '../../../public/images/sitescorporativos.png'
-import Estetica from '../../../public/images/estetica.png'
-import LojaOnline from '../../../public/images/lojaonline.png'
+// import SitesCorporativos from '../../../public/images/sitescorporativos.png'
+import Estetica from '../../../public/images/estetica.avif'
+import LojaOnline from '../../../public/images/lojaonline.avif'
 
 import {
   StyledBox,
@@ -15,16 +15,16 @@ function SlideCarousel() {
       <StyledBox>
         <CarouselSlide autoPlay>
           <CardSlide>
-            <ImageTeste src={SitesCorporativos} priority
-              alt='empresa'/>
+            <ImageTeste src={Estetica} priority
+              alt='estetica' />
           </CardSlide>
           <CardSlide>
             <ImageTeste src={Estetica} priority
-              alt='estetica'/>
+              alt='empresa' />
           </CardSlide>
           <CardSlide>
             <ImageTeste src={LojaOnline} priority
-              alt='lojaonline'/>
+              alt='lojaonline' />
           </CardSlide>
         </CarouselSlide>
       </StyledBox>
