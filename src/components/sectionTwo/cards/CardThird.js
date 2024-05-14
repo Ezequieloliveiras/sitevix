@@ -2,7 +2,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import Modal from '../modal/ModalThird'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Arte from '../../../../public/images/arte.png'
 import {Box} from './StylesCards'
 

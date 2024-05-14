@@ -16,15 +16,15 @@ function SlideCarousel() {
         <CarouselSlide autoPlay>
           <CardSlide>
             <ImageTeste src={SitesCorporativos}
-              layout='responsive' alt='empresa'/>
+              alt='empresa'/>
           </CardSlide>
           <CardSlide>
             <ImageTeste src={Estetica}
-              layout='responsive' alt='estetica'/>
+              alt='estetica'/>
           </CardSlide>
           <CardSlide>
             <ImageTeste src={LojaOnline}
-              layout='responsive' alt='lojaonline'/>
+              alt='lojaonline'/>
           </CardSlide>
         </CarouselSlide>
       </StyledBox>

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
 import styled from 'styled-components'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Architecture from '../../../../public/images/architecture.png'
 
 

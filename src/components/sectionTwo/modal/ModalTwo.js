@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import styled from 'styled-components'
 
 import Loja from '../../../../public/images/loja.png'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const BoxImage = styled(Box)`
     position: absolute;

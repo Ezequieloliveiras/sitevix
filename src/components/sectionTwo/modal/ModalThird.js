@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia'
 import { useState } from 'react'
 import styled from 'styled-components'
 
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Arte from '../../../../public/images/arte.png'
 
 const BoxImage = styled(Box)`
