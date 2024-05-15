@@ -8,7 +8,7 @@ import {Box} from './StylesCards'
 
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0', padding:'10px' }}>
+    <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0', padding:'10px'}}>
       <Box>
         <Image
           src={Arte}
@@ -17,7 +17,7 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00' }}>
+        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00'}}>
           Portfólios de Arte
         </Typography>
         <Typography color="text.secondary"  sx={{ textAlign: 'justify', }}>
