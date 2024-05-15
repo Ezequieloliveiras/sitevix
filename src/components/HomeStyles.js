@@ -98,7 +98,7 @@ const StyledTitleSection = styled.p`
       font-size: 2.6em;
       color: #757575;
       margin-top: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 15px;
       padding-bottom: 50px;
       text-align: center;
 
@@ -119,6 +119,7 @@ const StyledSubtitle= styled.p`
 
       @media (max-width: 600px) {
           font-size: 1rem;
+          margin-bottom: 0px;
       }
     }
 `
@@ -157,6 +158,8 @@ const StyledGridSectionTree = styled(Grid)`
       text-align: center;
       @media (max-width: 500px) {
         height: auto;
+        padding: 25px 0;
+
       }
     }
 `
