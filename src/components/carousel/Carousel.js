@@ -16,7 +16,6 @@ import LojaOnline from '../../../public/images/lojaonline.avif'
 register()
 
 function SlideCarousel() {
-
   const data = [
 
     { id: '1', image: SitesCorporativos, title: 'Sites Corporativos' },
@@ -26,9 +25,7 @@ function SlideCarousel() {
   ]
 
   return (
-
     <div className='container'>
-
       <Swiper
         className='swiper-slider'
         slidesPerView={1}
@@ -38,17 +35,11 @@ function SlideCarousel() {
         {data.map((item) => (
 
           <SwiperSlide key={item.id} className='swiper-slider'>
-
             <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high' priority />
-
           </SwiperSlide>
-
         ))}
-
       </Swiper>
-
     </div>
-
   )
 }
 

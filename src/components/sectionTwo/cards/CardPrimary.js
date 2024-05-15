@@ -10,7 +10,7 @@ export default function ActionAreaCard() {
 
   return (
 
-    <Card sx={{ maxWidth: 345, margin: '5px', backgroundColor: '#F0F0F0', padding:'10px' }}>
+    <Card sx={{ maxWidth: 345, margin: '5px', padding:'10px'}}>
       <Box>
         <Image
           src={Architecture}
