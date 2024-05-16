@@ -9,7 +9,7 @@ import {
   Mail
 } from '@mui/icons-material'
 
-import Support from '../../../public/images/support.png'
+import Support from '../../../public/images/support.avif'
 
 import {
   PageContainer,
@@ -32,7 +32,7 @@ const SupportPage = () => {
     <PageContainer>
       <SectionTitle>Suporte Premium para o Seu Site</SectionTitle>
       <Content>
-        <StyledImage src={Support} alt='suporte' />
+        <StyledImage src={Support} alt='suporte' priority/>
         <Box>
           <BoxText>
             <BenefitItem>
