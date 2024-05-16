@@ -20,7 +20,7 @@ export default function ActionAreaCard() {
         <TitleCard gutterBottom>
           Lojas Online
         </TitleCard>
-        <Typography color="text.secondary" letterSpacing='1px' textAlign='justify'>
+        <Typography color="text.secondary" >
           Venda seus produtos e serviços 24 horas por dia, 7 dias por semana, com uma loja online personalizada.
         </Typography>
       </CardContent>

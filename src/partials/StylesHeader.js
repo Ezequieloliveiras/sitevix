@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const StyledAppBar = styled(AppBar)`
     && {
-        background-color:#fff;
+        background-color:#482880;
         display:flex;
         justify-content:center;
     }
@@ -18,7 +18,6 @@ const StyledToolbar = styled(Toolbar)`
         display: flex;
         justify-content: center;
         margin: auto;
-        color: #757575;
     }
 `
 const StyledLinkLogo= styled(Link)`
@@ -36,7 +35,7 @@ const StyledTypographyLogo = styled(Typography)`
     && {
         font-weight: bold;
         font-size: 30px;
-        color: #757575;
+        color: #fff;
     }
 `
 const StyledTypographyPartialLogo = styled(Typography)`
@@ -63,7 +62,7 @@ const StyledBoxButtonsMenuIcon = styled(Button)`
 const StyledBoxButtonsMenu = styled(Button)`
 
     && {
-        color: #757575;
+        color: #fff;
         display: block;
         text-transform: none;
     }

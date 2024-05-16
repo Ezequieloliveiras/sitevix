@@ -18,7 +18,7 @@ const StyleCard = styled(Card)`
 `
 
 const TitleCard = styled.h2`
-    color: #f57c00;
+    color: #8561c5;
     font-weight: 400;
     @media (max-width:768px) {
         font-size: 1.3em;

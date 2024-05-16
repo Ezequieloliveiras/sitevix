@@ -22,7 +22,7 @@ export default function ActionAreaCard() {
         <TitleCard gutterBottom>
           Sites Corporativos
         </TitleCard>
-        <Typography color="text.secondary" letterSpacing='1px' textAlign='justify'>
+        <Typography color="text.secondary">
           Destaque a sua marca e alcance um público global com um site corporativo profissional.
         </Typography>
       </CardContent>

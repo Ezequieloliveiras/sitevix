@@ -21,7 +21,7 @@ export default function ActionAreaCard() {
         <TitleCard gutterBottom>
           Portfólios de Arte
         </TitleCard>
-        <Typography color="text.secondary"  textAlign='justify'>
+        <Typography color="text.secondary">
           Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
         </Typography>
       </CardContent>

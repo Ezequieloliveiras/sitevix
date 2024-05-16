@@ -24,7 +24,7 @@ const StyledBoxSectionOne = styled(Box)`
 const StyledTitleOne = styled.text`
     && {
       font-size: 2.8em;
-      color: #757575;
+      color: #482880;
       margin-bottom: 50px;
       text-align: center;
 
@@ -98,7 +98,7 @@ const StyledBoxSection = styled(Box)`
 const StyledTitleSection = styled.p`
     && {
       font-size: 2.6em;
-      color: #757575;
+      color: #482880;
       margin-top: 50px;
       margin-bottom: 15px;
       padding-bottom: 50px;
@@ -114,7 +114,7 @@ const StyledTitleSection = styled.p`
 `
 const StyledSubtitle= styled.p`
     && {
-      color: #f57c00;
+      color: #8561c5;
       font-size: 1.5em;
       margin-bottom: 15px;
       text-align: center;

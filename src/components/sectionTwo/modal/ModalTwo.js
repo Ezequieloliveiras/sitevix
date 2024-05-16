@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
-
 import styled from 'styled-components'
 
 import Loja from '../../../../public/images/loja.avif'
@@ -23,11 +22,8 @@ const BoxImage = styled(Box)`
         width: 60%;
     }
 `
-
 const ButtonModal = styled(Button)`
-
 && {
-
     background-color: #f57c00;
     color: #fff;
     margin-top: 10px;
@@ -37,7 +33,6 @@ const ButtonModal = styled(Button)`
     }
 }
 `
-
 export default function BasicModal() {
     const [open, setOpen] = useState(false)
     const handleOpen = () => setOpen(true)

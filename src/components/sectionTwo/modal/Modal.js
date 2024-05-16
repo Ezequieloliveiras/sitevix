@@ -21,11 +21,8 @@ const BoxImage = styled(Box)`
         width: 60%;
     }
 `
-
 const ButtonModal = styled(Button)`
-
 && {
-
     background-color: #f57c00;
     color: #fff;
     margin-top: 10px;
@@ -48,12 +45,9 @@ export default function BasicModal() {
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
+                aria-describedby="modal-modal-description">
                 <BoxImage>
-
                     <Image
-                        
                         src={Architecture}
                         alt="Arquitetura"
                         priority
