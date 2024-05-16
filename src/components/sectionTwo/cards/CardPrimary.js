@@ -1,16 +1,16 @@
 import Image from "next/legacy/image"
-import Card from '@mui/material/Card'
+
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import ModalImage from '../modal/Modal'
 import Architecture from '../../../../public/images/architecture.avif'
-import { Box } from './StylesCards'
+import { Box, TitleCard, StyleCard } from './StylesCards'
 
 export default function ActionAreaCard() {
 
   return (
 
-    <Card sx={{ maxWidth: 345, margin: '5px', padding:'10px'}}>
+    <StyleCard>
       <Box>
         <Image
           src={Architecture}
@@ -19,14 +19,14 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00'}}>
+        <TitleCard gutterBottom>
           Sites Corporativos
-        </Typography>
-        <Typography color="text.secondary" sx={{ textAlign: 'justify',letterSpacing: '1px' }}>
+        </TitleCard>
+        <Typography color="text.secondary" letterSpacing='1px' textAlign='justify'>
           Destaque a sua marca e alcance um público global com um site corporativo profissional.
         </Typography>
       </CardContent>
       <ModalImage />
-    </Card>
+    </StyleCard>
   )
 }

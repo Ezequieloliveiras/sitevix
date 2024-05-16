@@ -42,9 +42,11 @@ const StyledParagraphyOne = styled.h3`
       font-weight: 400;
       margin-bottom: 30px;
       text-align: center;
+      letter-spacing: 1px;
+
       @media (max-width: 600px) {
           font-size: 1rem;
-          text-align: justify;
+         
           letter-spacing: 1px;
           margin-bottom: 50px;
           margin-top: 20px;
@@ -129,11 +131,13 @@ const StyledParagraphy= styled.p`
       color: #666;
       font-size: 1.2em;
       line-height: 1.6;
-      text-align: center;
+      text-align: left;
+      letter-spacing: 1px;
       @media (max-width: 768px) {
         margin-bottom: 0px;
         font-size: 1em;
-        text-align: justify;
+        text-align: center;
+        padding-left: 3%;
         letter-spacing: 1px;
       }
     }

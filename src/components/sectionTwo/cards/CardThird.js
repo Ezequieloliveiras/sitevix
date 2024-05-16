@@ -4,11 +4,12 @@ import Typography from '@mui/material/Typography'
 import Modal from '../modal/ModalThird'
 import Image from "next/legacy/image"
 import Arte from '../../../../public/images/art.avif'
-import {Box} from './StylesCards'
+import { Box, TitleCard, StyleCard } from './StylesCards'
+
 
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 345, margin: '5px', padding:'10px'}}>
+    <StyleCard>
       <Box>
         <Image
           src={Arte}
@@ -17,15 +18,15 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" sx={{ color: '#f57c00'}}>
+        <TitleCard gutterBottom>
           Portfólios de Arte
-        </Typography>
-        <Typography color="text.secondary"  sx={{ textAlign: 'justify', }}>
+        </TitleCard>
+        <Typography color="text.secondary"  textAlign='justify'>
           Exiba seu trabalho de forma deslumbrante e conquiste novos clientes com um portfólio de arte online.
         </Typography>
       </CardContent>
       <Modal/>
-    </Card>
+    </StyleCard>
 
   )
 }

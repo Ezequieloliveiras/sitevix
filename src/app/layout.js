@@ -1,4 +1,5 @@
 'use client'
+
 import StyledComponentsRegistry from './registry'
 import { Inter } from "next/font/google";
 import Header from '../partials/Header'

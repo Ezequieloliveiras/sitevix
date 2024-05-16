@@ -22,7 +22,7 @@ export default function SectionTree() {
                 Experiência Profissional
               </StyledSubtitle>
               <StyledParagraphy>
-                Nossa equipe tem anos de experiência em design e desenvolvimento de sites, garantindo qualidade e profissionalismo em cada projeto.
+                Nossa equipe tem anos de experiência em e desenvolvimento de sites, garantindo qualidade e profissionalismo em cada projeto.
               </StyledParagraphy>
             </Grid>
             <Grid item xs={12} sm={4}>

@@ -11,19 +11,12 @@ export default function Home() {
 
   return (
     <Grid>
-
       <div>
-
         <Carousel />
-
       </div>
-
       <SectionOne />
-
       <SectionTwo />
-
       <SectionTree />
-
     </Grid>
 
   )

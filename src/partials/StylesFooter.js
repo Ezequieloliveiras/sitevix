@@ -16,9 +16,6 @@ const ConatinerFooter = styled(Container)`
 `
 const BoxContent = styled(Grid)`
 && {
-  display:flex;
-  justify-content:center;
-  text-align:center;
 }
 `
 const ContentFooter = styled(Grid)`
@@ -37,13 +34,6 @@ const TitleFooter = styled(Typography)`
 const Description = styled(Grid)`
 && {
   text-align:left;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 }
 `
 const BoxFooter = styled(Box)`
