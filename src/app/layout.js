@@ -1,7 +1,7 @@
 'use client'
 
 import StyledComponentsRegistry from './registry'
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"
 import Header from '../partials/Header'
 import Footer from '../partials/Footer'
 import styled from 'styled-components'
@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
   return (
     <>
       <html lang="pt-br">
-
         <StyledBody className={inter.className} style={{ margin: '0px', padding: '0px' }}>
           <StyledComponentsRegistry>
             <Header />
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
           </StyledComponentsRegistry>
         </StyledBody>
       </html>
-
     </>
-  );
+  )
 }

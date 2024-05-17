@@ -9,7 +9,7 @@ const SuccessMessage = styled.div`
 
 const Message = ({ visible }) => {
   return (
-    <div className="App">
+    <div>
       <SuccessMessage data-visible={visible}>E-mail enviado com sucesso!</SuccessMessage>
     </div>
   )

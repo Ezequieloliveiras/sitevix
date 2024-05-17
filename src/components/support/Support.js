@@ -32,7 +32,11 @@ const SupportPage = () => {
     <PageContainer>
       <SectionTitle>Suporte Premium para o Seu Site</SectionTitle>
       <Content>
-        <StyledImage src={Support} alt='suporte' priority/>
+        <StyledImage 
+        src={Support} 
+         priority 
+        //  alt='suporte'
+         />
         <Box>
           <BoxText>
             <BenefitItem>

@@ -26,18 +26,18 @@ function ResponsiveAppBar() {
                     <StyledTypographyPartialLogo>VIX</StyledTypographyPartialLogo>
                 </StyledLinkLogo>
                 <StyledBoxContent>
-                    <StyledBoxButtonsMenu href='/' id='botaoInicio'>
+                    <StyledBoxButtonsMenu href='/'>
                         Inicío
                     </StyledBoxButtonsMenu>
-                    <StyledBoxButtonsMenu href='/pages/contact' id='botaoContato'>
+                    <StyledBoxButtonsMenu href='/pages/contact'>
                         Contato
                     </StyledBoxButtonsMenu>
-                    <StyledBoxButtonsMenu href='/pages/support' id='botaoSuporte'>
+                    <StyledBoxButtonsMenu href='/pages/support'>
                         Suporte e Planos
                     </StyledBoxButtonsMenu>
                     <BoxWhatsapp>
                         <Link href="https://api.whatsapp.com/send?phone=27997337338">
-                            <WhatsAppIcon sx={{ color: '#66bb6a' }} id='iconeWhatsapp' />
+                            <WhatsAppIcon sx={{ color: '#66bb6a' }}/>
                         </Link>
                     </BoxWhatsapp>
                 </StyledBoxContent>

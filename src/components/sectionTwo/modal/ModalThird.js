@@ -40,7 +40,7 @@ export default function BasicModal() {
 
     return (
         <div>
-            <ButtonModal onClick={handleOpen} id='botaoVeja'>Ver</ButtonModal>
+            <ButtonModal onClick={handleOpen}>Ver</ButtonModal>
             <Modal
                 open={open}
                 onClose={handleClose}

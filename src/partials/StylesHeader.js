@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const StyledAppBar = styled(AppBar)`
     && {
-        background-color:#482880;
+        background-color: #482880;
         display:flex;
         justify-content:center;
     }
@@ -82,7 +82,7 @@ const BoxWhatsapp = styled(Box)`
 &&{
     display: flex;
     align-items: center;
-     margin-left: 10px;
+    margin-left: 10px;
 }
 
 `

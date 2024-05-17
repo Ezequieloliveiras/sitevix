@@ -20,7 +20,7 @@ export default function SectionOne() {
             Nossa equipe especializada está pronta para criar um site que destaque sua marca, atraia mais clientes e impulsione suas vendas. Não perca tempo, dê o próximo passo para o sucesso online!
           </StyledParagraphyOne>
           <Link href='https://wa.me/27997337338'>
-          <StyledButtonGo id='botaoOrçamento'>
+          <StyledButtonGo>
               Faça um orçamento
           </StyledButtonGo>
           </Link>
