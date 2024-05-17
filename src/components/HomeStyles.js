@@ -36,7 +36,7 @@ const StyledTitleOne = styled.text`
 `
 const StyledParagraphyOne = styled.h3`
     && {
-      font-size: 20;
+      font-size: 20px;
       color: #666;
       line-height: 1.6;
       font-weight: 400;
@@ -46,10 +46,9 @@ const StyledParagraphyOne = styled.h3`
 
       @media (max-width: 600px) {
           font-size: 1rem;
-         
           letter-spacing: 1px;
-          margin-bottom: 50px;
-          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-top: 40px;
       }
     }
 `
@@ -57,6 +56,7 @@ const StyledButtonGo = styled.button`
     && {
       padding: 15px 30px;
       background-color: #f57c00;
+      margin-top: 50px;
       font-size: 18px;
       color: #fff;
       border: none;
@@ -112,7 +112,7 @@ const StyledTitleSection = styled.p`
       }
     }
 `
-const StyledSubtitle= styled.p`
+const StyledSubtitle = styled.p`
     && {
       color: #8561c5;
       font-size: 1.5em;
@@ -125,13 +125,13 @@ const StyledSubtitle= styled.p`
       }
     }
 `
-const StyledParagraphy= styled.p`
+const StyledParagraphy = styled.p`
     && {
       margin-bottom: 20px;
       color: #666;
       font-size: 1.2em;
       line-height: 1.6;
-      text-align: left;
+      text-align: center;
       letter-spacing: 1px;
       @media (max-width: 768px) {
         margin-bottom: 0px;
@@ -142,7 +142,7 @@ const StyledParagraphy= styled.p`
       }
     }
 `
-const StyledBoxImage= styled.div`
+const StyledBoxImage = styled.div`
     && {
       width: 100%;
       height: auto;
@@ -173,19 +173,19 @@ const StyledImage = styled.img`
       height: auto;      
     }
 `
-export{
-    StyledGridSectionOne,
-    StyledBoxSectionOne,
-    StyledTitleOne,
-    StyledParagraphyOne,
-    StyledButtonGo,
-    StyledGridSectionTwo,
-    StyledBoxTitle,
-    StyledBoxSection,
-    StyledTitleSection,
-    StyledSubtitle,
-    StyledParagraphy,
-    StyledBoxImage,
-    StyledGridSectionTree,
-    StyledImage,
+export {
+  StyledGridSectionOne,
+  StyledBoxSectionOne,
+  StyledTitleOne,
+  StyledParagraphyOne,
+  StyledButtonGo,
+  StyledGridSectionTwo,
+  StyledBoxTitle,
+  StyledBoxSection,
+  StyledTitleSection,
+  StyledSubtitle,
+  StyledParagraphy,
+  StyledBoxImage,
+  StyledGridSectionTree,
+  StyledImage,
 }

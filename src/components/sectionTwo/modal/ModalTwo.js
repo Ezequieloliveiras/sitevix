@@ -40,7 +40,7 @@ export default function BasicModal() {
 
     return (
         <div>
-            <ButtonModal onClick={handleOpen} id='botaoVeja'>Veja</ButtonModal>
+            <ButtonModal onClick={handleOpen} id='botaoVeja'>Ver</ButtonModal>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -52,6 +52,8 @@ export default function BasicModal() {
                         src={Loja}
                         alt="loja online"
                         priority
+                        width={900}
+                        height={500}
                     />
                 </BoxImage>
             </Modal>

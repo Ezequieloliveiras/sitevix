@@ -78,6 +78,14 @@ const StyledBoxContent = styled(Box)`
         }
     }
 `
+const BoxWhatsapp = styled(Box)`
+&&{
+    display: flex;
+    align-items: center;
+     margin-left: 10px;
+}
+
+`
 export {
     StyledAppBar,
     StyledToolbar,
@@ -88,4 +96,5 @@ export {
     StyledBoxButtonsMenuIcon,
     StyledBoxButtonsMenu,
     StyledBoxContent,
+    BoxWhatsapp,
 }

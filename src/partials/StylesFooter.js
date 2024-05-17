@@ -29,17 +29,19 @@ const TitleFooter = styled(Typography)`
 && {
   text-align:left;
   margin-bottom:10px;
+  color: #482880;
 }
 `
 const Description = styled(Grid)`
 && {
-  text-align:left;
+  color: #482880;
+  text-align: center;
 }
 `
 const BoxFooter = styled(Box)`
 
     && {
-      background-color: #482880;
+      background-color: #ede7f6;
       color: #fff;
       padding: 50px 0 ;
     }
@@ -54,7 +56,7 @@ const List = styled.li`
 const LinkFooter = styled(Link)`
 
     && {
-      color: #fff;
+      color: #482880;
       text-decoration: none;
     }
 `
@@ -81,7 +83,7 @@ const Info = styled.div`
   text-align: center;
   font-size: 10px;
   margin-top: 40px;
-  color: #fafafa;
+  color: #482880;
 `
 export {
   ConatinerFooter,

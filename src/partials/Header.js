@@ -1,7 +1,6 @@
 import Drawer from './Drawer'
-import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import { Box } from '@mui/material'
 import Link from 'next/link'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 
 import {
     StyledAppBar,
@@ -12,7 +11,7 @@ import {
     StyledBoxButtons,
     StyledBoxButtonsMenu,
     StyledBoxContent,
-
+    BoxWhatsapp
 } from './StylesHeader'
 
 function ResponsiveAppBar() {
@@ -20,7 +19,7 @@ function ResponsiveAppBar() {
         <StyledAppBar position="static">
             <StyledToolbar disableGutters>
                 <StyledBoxButtons>
-                    <Drawer/>
+                    <Drawer />
                 </StyledBoxButtons>
                 <StyledLinkLogo href="/">
                     <StyledTypographyLogo >SITE</StyledTypographyLogo>
@@ -36,11 +35,11 @@ function ResponsiveAppBar() {
                     <StyledBoxButtonsMenu href='/pages/support' id='botaoSuporte'>
                         Suporte e Planos
                     </StyledBoxButtonsMenu>
-                    <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>
+                    <BoxWhatsapp>
                         <Link href="https://api.whatsapp.com/send?phone=27997337338">
-                            <WhatsAppIcon sx={{ color: 'green' }} />
+                            <WhatsAppIcon sx={{ color: '#66bb6a' }} id='iconeWhatsapp' />
                         </Link>
-                    </Box>
+                    </BoxWhatsapp>
                 </StyledBoxContent>
             </StyledToolbar>
         </StyledAppBar>

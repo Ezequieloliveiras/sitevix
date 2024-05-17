@@ -4,7 +4,7 @@ import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
 import styled from 'styled-components'
 import Image from "next/legacy/image"
-import Architecture from '../../../../public/images/architecture.avif'
+import Corporate from '../../../../public/images/corporate.avif'
 
 const BoxImage = styled(Box)`
     position: absolute;
@@ -40,7 +40,7 @@ export default function BasicModal() {
 
     return (
         <div>
-            <ButtonModal onClick={handleOpen} id='botaoVeja'>Veja</ButtonModal>
+            <ButtonModal onClick={handleOpen} id='botaoVeja'>Ver</ButtonModal>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -48,9 +48,10 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description">
                 <BoxImage>
                     <Image
-                        src={Architecture}
-                        alt="Arquitetura"
+                        src={Corporate}
+                        alt="corporativo"
                         priority
+                        width={900}
                     />
                 </BoxImage>
             </Modal>

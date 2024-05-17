@@ -17,7 +17,7 @@ export default function SectionTree() {
             Por que nos escolher?
           </StyledTitleSection>
           <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={12} sm={4} >
+            <Grid item xs={12} sm={4}>
               <StyledSubtitle>
                 Experiência Profissional
               </StyledSubtitle>

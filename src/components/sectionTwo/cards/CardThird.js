@@ -18,7 +18,7 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <TitleCard gutterBottom>
+        <TitleCard>
           Portfólios de Arte
         </TitleCard>
         <Typography color="text.secondary">

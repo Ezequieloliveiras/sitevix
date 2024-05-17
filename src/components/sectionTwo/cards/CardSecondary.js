@@ -17,7 +17,7 @@ export default function ActionAreaCard() {
         />
       </Box>
       <CardContent>
-        <TitleCard gutterBottom>
+        <TitleCard>
           Lojas Online
         </TitleCard>
         <Typography color="text.secondary" >

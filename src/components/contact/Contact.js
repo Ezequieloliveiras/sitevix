@@ -10,7 +10,8 @@ const ContactPage = () => {
           flexDirection: 'column',
           alignItems: 'center',
           height: '100vh',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          backgroundColor:'#f5f5f5'
         }}>
         <div>
         <FormContact />
