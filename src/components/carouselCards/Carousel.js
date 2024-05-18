@@ -29,10 +29,25 @@ function SlideCarousel() {
     <>
       <Swiper
         className='swiper-sliderCard '
-        slidesPerView={3}
+      
         autoplay={false}
         // pagination={{ clickable: true }}
         navigation={true}
+        breakpoints={{
+          
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        }}
       >
         {data.map((item) => (
 
