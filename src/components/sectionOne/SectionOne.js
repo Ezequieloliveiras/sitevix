@@ -5,7 +5,7 @@ import {
   StyledTitleOne,
   StyledParagraphyOne,
   StyledButtonGo,
-} from '../HomeStyles'
+} from './StylesSectionOne'
 
 export default function SectionOne() {
 

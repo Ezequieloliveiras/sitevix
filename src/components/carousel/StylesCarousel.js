@@ -12,7 +12,6 @@ const StyledBox = styled(Box)`
 const CardSlide = styled.div`
   height: 500px;
 
-
   @media (max-width:540px) {
     height: auto;
   }

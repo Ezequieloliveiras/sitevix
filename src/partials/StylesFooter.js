@@ -9,55 +9,50 @@ import {
 
 const ConatinerFooter = styled(Container)`
 && {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
 `
 const BoxContent = styled(Grid)`
-&& {
-}
 `
 const ContentFooter = styled(Grid)`
 && {
-  display: flex;
-  flex-direction: column ;
-  align-items: center;
-}
+      display: flex;
+      flex-direction: column ;
+      align-items: center;
+    }
 `
 const TitleFooter = styled(Typography)`
 && {
-  text-align:left;
-  margin-bottom:10px;
-  color: #482880;
-}
+      text-align:left;
+      margin-bottom:10px;
+      color: #482880;
+    }
 `
 const Description = styled(Grid)`
 && {
-  color: #482880;
-  text-align: center;
-}
+      color: #482880;
+      text-align: center;
+    }
 `
 const BoxFooter = styled(Box)`
-
-    && {
+&& {
+  padding: 50px 0;
       background-color: #ede7f6;
       color: #fff;
-      padding: 50px 0 ;
     }
 `
 const List = styled.li`
-
-    && {
+&& {
+      padding: 0;
       list-style: none;
-      padding: 0 ;
     }
 `
 const LinkFooter = styled(Link)`
-
-    && {
-      color: #482880;
+&& {
       text-decoration: none;
+      color: #482880;
     }
 `
 const StyledIframe = styled.iframe`

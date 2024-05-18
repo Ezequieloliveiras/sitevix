@@ -3,8 +3,7 @@ import { Grid, Box } from '@mui/material'
 import {
   StyledGridSectionTwo,
   StyledTitleSection,
-} from '../HomeStyles'
-
+} from './StylesSectionTwo'
 
 import CardPrimary from './cards/CardPrimary'
 import CardTwo from './cards/CardSecondary'

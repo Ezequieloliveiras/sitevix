@@ -7,7 +7,7 @@ import {
   StyledSubtitle,
   StyledParagraphy,
   StyledGridSectionTree,
-} from '../HomeStyles'
+} from './StylesSectionTree'
 
 export default function SectionTree() {
   return (

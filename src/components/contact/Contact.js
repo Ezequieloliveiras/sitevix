@@ -1,22 +1,23 @@
+import styled from 'styled-components'
 import FormContact from './form/formContact'
 
-const ContactPage = () => {
+const Contact = styled.div`
+display: flex;
+flex-direction: column;
+align-items:center;
+height: 100vh;
+justify-content: center;
+background-color: #f5f5f5;
+`
 
+const ContactPage = () => {
   return (
     <>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          height: '100vh',
-          justifyContent: 'center',
-          backgroundColor:'#f5f5f5'
-        }}>
+      <Contact>
         <div>
-        <FormContact />
+          <FormContact />
         </div>
-      </div>
+      </Contact>
     </>
   )
 }

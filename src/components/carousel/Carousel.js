@@ -18,9 +18,9 @@ register()
 function SlideCarousel() {
   const data = [
 
-    { id: '1', image: SitesCorporativos, title: 'Sites Corporativos'},
-    { id: '3', image: LojaOnline, title: 'Blogs'},
-    { id: '2', image: Estetica, title: 'Lojas Online'},
+    { id: '1', image: SitesCorporativos, title: 'Sites Corporativos' },
+    { id: '3', image: LojaOnline, title: 'Blogs' },
+    { id: '2', image: Estetica, title: 'Lojas Online' },
 
   ]
 
@@ -34,7 +34,11 @@ function SlideCarousel() {
         {data.map((item) => (
 
           <SwiperSlide key={item.id} className='swiper-slider'>
-            <Image src={item.image} alt='sites' className='slider-item' fetchPriority='high' priority />
+            <Image src={item.image}
+              alt='sites'
+              className='slider-item'
+              fetchPriority='high'
+              priority />
           </SwiperSlide>
         ))}
       </Swiper>
