@@ -47,5 +47,3 @@ function SlideCarousel() {
 }
 
 export default SlideCarousel
-
-

@@ -8,7 +8,6 @@ import styled from 'styled-components'
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 const StyledBody = styled.body`
 margin: 0;
 padding: 0;

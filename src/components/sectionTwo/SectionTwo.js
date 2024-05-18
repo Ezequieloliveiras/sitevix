@@ -1,13 +1,10 @@
 import { Grid, Box } from '@mui/material'
+import CarouselCards from '../carouselCards/Carousel'
 
 import {
   StyledGridSectionTwo,
   StyledTitleSection,
 } from './StylesSectionTwo'
-
-import CardPrimary from './cards/CardPrimary'
-import CardTwo from './cards/CardSecondary'
-import CardThird from './cards/CardThird'
 
 export default function SectionTwo() {
   return (
@@ -19,9 +16,7 @@ export default function SectionTwo() {
           <Box>
             <Box sx={{ display: 'flex', justifyContent: 'center' }} >
               <Grid container sx={{ display: 'flex', justifyContent: 'center' }}>
-                <CardPrimary/>
-                <CardTwo/>
-                <CardThird />
+                <CarouselCards/>
               </Grid>
             </Box>
           </Box>
