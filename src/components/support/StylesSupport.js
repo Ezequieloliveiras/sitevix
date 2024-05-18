@@ -73,7 +73,7 @@ const Box = styled.div`
 
 `
 const StyledImage = styled(Image)`
-  margin-right: 50px;
+  margin-right: 30px;
   border-radius: 5px;
   height: 100%;
   width: auto;
@@ -86,7 +86,7 @@ const StyledImage = styled(Image)`
 }
     @media (min-width: 769px) {
       height: 100%;
-      width: 100%;
+      width: 90%;
 }
 `
 const BoxText = styled.div`
