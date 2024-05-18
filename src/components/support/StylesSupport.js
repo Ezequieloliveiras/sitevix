@@ -72,7 +72,7 @@ const Box = styled.div`
 }
 
 `
-const StyledImage = styled(Image)`
+const ImageWoman = styled(Image)`
   margin-right: 30px;
   border-radius: 5px;
   height: 100%;
@@ -107,6 +107,6 @@ export {
     IconWrapper,
     Content,
     Box,
-    StyledImage,
+    ImageWoman,
     BoxText,
 }

@@ -9,8 +9,6 @@ import {
   Mail
 } from '@mui/icons-material'
 
-import Support from '../../../public/images/support.avif'
-
 import {
   PageContainer,
   SectionTitle,
@@ -21,9 +19,12 @@ import {
   IconWrapper,
   Content,
   Box,
-  StyledImage,
+  ImageWoman,
   BoxText,
 } from './StylesSupport'
+
+import Support from '../../../public/images/support.avif'
+
 
 const Icon = ({ icon }) => <IconWrapper>{icon}</IconWrapper>;
 
@@ -32,11 +33,11 @@ const SupportPage = () => {
     <PageContainer>
       <SectionTitle>Suporte Premium para o Seu Site</SectionTitle>
       <Content>
-        <StyledImage 
-        src={Support} 
-         priority 
-        //  alt='suporte'
-         />
+        <ImageWoman
+          src={Support}
+          priority
+          alt='suporte'
+        />
         <Box>
           <BoxText>
             <BenefitItem>
@@ -76,7 +77,6 @@ const SupportPage = () => {
         <ContactButton>Entre em Contato Conosco</ContactButton>
       </Link>
     </PageContainer>
-
   )
 }
 
