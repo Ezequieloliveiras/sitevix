@@ -34,18 +34,22 @@ function SlideCarousel() {
         // pagination={{ clickable: true }}
         navigation={true}
         breakpoints={{
-          
+          540: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            width:345,
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 2,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
         }}
       >

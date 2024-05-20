@@ -3,7 +3,7 @@ import { Box, Grid } from '@mui/material'
 
 const StyledGridSectionOne = styled(Grid)`
 && {
-      height: 500px;
+      height: 600px;
       display: flex;
       align-items: center;
       padding: 50px 10px 50px 10px;
