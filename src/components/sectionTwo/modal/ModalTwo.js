@@ -53,9 +53,6 @@ export default function BasicModal() {
                         src={Loja}
                         alt="lojaOnline"
                         priority
-                        width={900}
-                        height={650}
-                        quality={100}
                         layout='responsive'
                         onLoad={() => setImageLoaded(true)}
                     />
