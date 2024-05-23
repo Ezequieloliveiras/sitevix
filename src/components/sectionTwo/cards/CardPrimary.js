@@ -3,7 +3,7 @@ import Image from "next/legacy/image"
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import ModalImage from '../modal/Modal'
-import Architecture from '../../../../public/images/corporate.avif'
+import Corporativo from '../../../../public/images/corporate.avif'
 import { Box, TitleCard, StyleCard } from './StylesCards'
 
 export default function ActionAreaCard() {
@@ -13,7 +13,7 @@ export default function ActionAreaCard() {
     <StyleCard>
       <Box>
         <Image
-          src={Architecture}
+          src={Corporativo}
           priority
           alt="Arquitetura"
         />

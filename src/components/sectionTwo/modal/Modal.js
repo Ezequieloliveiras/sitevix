@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -36,6 +35,7 @@ const ButtonModal = styled(Button)`
 
 export default function BasicModal() {
     const [open, setOpen] = useState(false)
+    const [imageLoaded, setImageLoaded] = useState(false)
     const handleOpen = () => setOpen(true)
     const handleClose = () => setOpen(false)
 
@@ -47,6 +47,7 @@ export default function BasicModal() {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description">
                 <BoxImage>
+                    {!imageLoaded && <div>Loading...</div>}
                     <Image
                         src={Corporate}
                         alt="corporativo"
@@ -55,6 +56,7 @@ export default function BasicModal() {
                         height={650}
                         quality={100}
                         layout='responsive'
+                        onLoad={() => setImageLoaded(true)}
                     />
                 </BoxImage>
             </Modal>

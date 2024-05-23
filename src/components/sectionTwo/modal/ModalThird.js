@@ -35,6 +35,7 @@ const ButtonModal = styled(Button)`
 `
 export default function BasicModal() {
     const [open, setOpen] = useState(false)
+    const [imageLoaded, setImageLoaded] = useState(false)
     const handleOpen = () => setOpen(true)
     const handleClose = () => setOpen(false)
 
@@ -47,6 +48,7 @@ export default function BasicModal() {
                 aria-describedby="modal-modal-description"
             >
                 <BoxImage>
+                {!imageLoaded && <div>Loading...</div>}
                     <Image
                         src={Art}
                         alt="siteDeCatalogo"
@@ -55,6 +57,7 @@ export default function BasicModal() {
                         height={650}
                         quality={100}
                         layout='responsive'
+                        onLoad={() => setImageLoaded(true)}
                     />
                 </BoxImage>
             </Modal>
