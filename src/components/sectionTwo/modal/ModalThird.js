@@ -54,6 +54,7 @@ export default function BasicModal() {
                         alt="siteDeCatalogo"
                         priority
                         layout='responsive'
+                        quality={100}
                         onLoad={() => setImageLoaded(true)}
                     />
                 </BoxImage>

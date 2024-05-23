@@ -54,6 +54,7 @@ export default function BasicModal() {
                         alt="restaurante"
                         priority
                         layout='responsive'
+                        quality={100}
                         onLoad={() => setImageLoaded(true)}
                     />
                 </BoxImage>

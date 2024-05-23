@@ -53,6 +53,7 @@ export default function BasicModal() {
                         alt="corporativo"
                         priority
                         layout='responsive'
+                        quality={100}
                         onLoad={() => setImageLoaded(true)}
                     />
                 </BoxImage>
