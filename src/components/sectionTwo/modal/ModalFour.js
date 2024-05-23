@@ -39,8 +39,7 @@ export default function BasicModal() {
     const handleClose = () => setOpen(false)
 
     return (
-        <div>
-            <ButtonModal onClick={handleOpen} >Ver</ButtonModal>
+        <>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -50,14 +49,16 @@ export default function BasicModal() {
                 <BoxImage>
                     <Image
                         src={Restaurante}
-                        alt="Restaurante"
+                        alt="restaurante"
                         priority
                         width={900}
                         height={650}
+                        quality={100}
                         layout='responsive'
                     />
                 </BoxImage>
             </Modal>
-        </div>
+            <ButtonModal onClick={handleOpen}>Ver</ButtonModal>
+        </>
     )
 }
