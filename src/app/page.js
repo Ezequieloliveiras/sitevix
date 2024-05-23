@@ -10,9 +10,9 @@ import SectionTree from '@/components/sectionTree/SectionTree'
 export default function Home() {
   return (
     <Grid>
-      <div>
+      <>
         <Carousel />
-      </div>
+      </>
       <SectionOne />
       <SectionTwo />
       <SectionTree />
