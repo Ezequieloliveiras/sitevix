@@ -1,11 +1,12 @@
-
 import { useState } from 'react'
+import styled from 'styled-components'
+
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
-import styled from 'styled-components'
+
+import Viagens from '../../../../public/images/trips.avif'
 import Image from "next/legacy/image"
-import Corporate from '../../../../public/images/corporate.avif'
 
 const BoxImage = styled(Box)`
     position: absolute;
@@ -13,11 +14,11 @@ const BoxImage = styled(Box)`
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
-
+    
     @media (max-width: 768px) {
         width: 95%;
     }
-    
+
     @media (min-width: 900px) {
         width: 60%;
     }
@@ -33,7 +34,6 @@ const ButtonModal = styled(Button)`
     }
 }
 `
-
 export default function BasicModal() {
     const [open, setOpen] = useState(false)
     const handleOpen = () => setOpen(true)
@@ -41,16 +41,17 @@ export default function BasicModal() {
 
     return (
         <div>
-            <ButtonModal onClick={handleOpen}>Ver</ButtonModal>
+            <ButtonModal onClick={handleOpen} >Ver</ButtonModal>
             <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description">
+                aria-describedby="modal-modal-description"
+            >
                 <BoxImage>
                     <Image
-                        src={Corporate}
-                        alt="corporativo"
+                        src={Viagens}
+                        alt="loja online"
                         priority
                         width={900}
                         height={650}

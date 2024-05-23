@@ -53,7 +53,8 @@ export default function BasicModal() {
                         alt="loja online"
                         priority
                         width={900}
-                        height={500}
+                        height={650}
+                        layout='responsive'
                     />
                 </BoxImage>
             </Modal>

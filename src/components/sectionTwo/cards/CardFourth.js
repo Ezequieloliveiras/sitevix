@@ -1,32 +1,31 @@
-import Image from "next/legacy/image"
-
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-import ModalImage from '../modal/Modal'
-import Architecture from '../../../../public/images/corporate.avif'
+import Modal from '../modal/ModalFour'
+import Image from "next/legacy/image"
+import SiteRestaurante from '../../../../public/images/restaurant.avif'
 import { Box, TitleCard, StyleCard } from './StylesCards'
 
+
 export default function ActionAreaCard() {
-
   return (
-
     <StyleCard>
       <Box>
         <Image
-          src={Architecture}
+          src={SiteRestaurante}
           priority
-          alt="Arquitetura"
+          alt="siteRestaurante"
         />
       </Box>
       <CardContent>
         <TitleCard>
-          Sites Corporativos
+          Restaurante
         </TitleCard>
         <Typography color="text.secondary">
-        Valorize sua marca e alcance um público global com um site corporativo profissional.
+          Destaque o seu restaurante e atraia clientes de todo o mundo com um site profissional.
         </Typography>
       </CardContent>
-      <ModalImage />
+      <Modal />
     </StyleCard>
+
   )
 }

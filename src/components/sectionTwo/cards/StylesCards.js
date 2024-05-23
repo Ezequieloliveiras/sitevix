@@ -2,7 +2,7 @@ import { Card } from '@mui/material'
 import styled from 'styled-components'
 
 const Box = styled.div`
- height: 200px;
+ height: auto;
  width: auto;
 `
 

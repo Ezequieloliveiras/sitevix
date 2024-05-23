@@ -12,6 +12,8 @@ import './carouselCard.css'
 import CardOne from '../sectionTwo/cards/CardPrimary'
 import CardTwo from '../sectionTwo/cards/CardSecondary'
 import CardTree from '../sectionTwo/cards/CardThird'
+import CardFour from '../sectionTwo/cards/CardFourth'
+import CardFive from '../sectionTwo/cards/CardFifth'
 
 register()
 
@@ -21,14 +23,15 @@ function SlideCarousel() {
     { id: '1', Component: CardOne},
     { id: '2', Component: CardTwo},
     { id: '3', Component: CardTree},
-    { id: '4', Component: CardOne},
-    { id: '5', Component: CardTree},
+    { id: '4', Component: CardFour},
+    { id: '5', Component: CardFive},
+
   ]
 
   return (
     <>
       <Swiper
-        className='swiper-sliderCard '
+        className='swiper-sliderCard'
       
         autoplay={false}
         // pagination={{ clickable: true }}

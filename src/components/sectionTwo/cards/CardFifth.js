@@ -1,32 +1,32 @@
-import Image from "next/legacy/image"
-
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-import ModalImage from '../modal/Modal'
-import Architecture from '../../../../public/images/corporate.avif'
+import Modal from '../modal/ModalFifth'
+import Image from "next/legacy/image"
+
+import Viagens from '../../../../public/images/trips.avif'
 import { Box, TitleCard, StyleCard } from './StylesCards'
 
+
 export default function ActionAreaCard() {
-
   return (
-
     <StyleCard>
       <Box>
         <Image
-          src={Architecture}
+          src={Viagens}
           priority
-          alt="Arquitetura"
+          alt="siteDeCatalogo"
         />
       </Box>
       <CardContent>
         <TitleCard>
-          Sites Corporativos
+          Site de Viagens
         </TitleCard>
         <Typography color="text.secondary">
-        Valorize sua marca e alcance um público global com um site corporativo profissional.
+          Promova seus destinos e alcance viajantes de todo o mundo com um site profissional.
         </Typography>
       </CardContent>
-      <ModalImage />
+      <Modal />
     </StyleCard>
+
   )
 }
